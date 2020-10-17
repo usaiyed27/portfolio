@@ -7,17 +7,40 @@ body{
 	margin: 0;
 }
 
-nav{
-	border: 1px solid white;
-	width: 10%;
-	height: 99vh;
+a{
+	text-decoration: none;
+}
+header{
+	border-right: 5px double #fff;
+	width: 120px;
+	height: 100vh;
 	display: grid;
 	align-content: end;
 }
+
+#logo{
+	position: absolute;
+	top: 50px;
+	left: 25px;
+}
+#logo span{
+	background-color: #fff;
+	color: #28536B;
+	top: 20px;
+	font-size: 25px;
+	border-radius: 50%;
+	padding: 15px;
+	font-family: 'Dancing Script', cursive;
+
+}
+
 nav a {
-	text-decoration: none;
 	color:#fff;
 	display: block;
 	bottom: 0;
+	padding: 15px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-family: 'Dancing Script', cursive;
 
 }
