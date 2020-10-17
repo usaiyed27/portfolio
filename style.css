@@ -32,6 +32,15 @@ body header{
 	position: fixed;
 }
 
+.title-line{
+	background: #fff;
+    position: absolute;
+    display: inline;
+    width: 8%;
+    right: 0;
+    top: 0;
+}
+
 #logo{
 	position: absolute;
 	top: 50px;
@@ -85,6 +94,7 @@ nav a {
 .intro h5{
 	font-size: 20px;
 	font-family: 'Antic Slab', serif;
+	position: relative;
 }
 
 .intro h1{
@@ -196,6 +206,8 @@ li span{
 
 #experience .first-col{
 	position: relative;
+	border-right: 1px solid #fff;
+	text-align: right;
 }
 
 #experience1, #experience2{
@@ -212,9 +224,35 @@ li span{
 }
 
 #experience .second-col{
-	border-left: 1px solid #fff;
+	padding-left: 25px;
 }
 
+.company{
+	display: grid;
+	align-content: center;
+}
+
+
+#experience ul{
+	padding-left: 0;
+}
+#experience1 h2, #experience2 h2{
+	font-size: 20px;
+	font-family: 'Antic Slab';
+	padding-bottom: 15px;
+	margin-bottom: 0;
+}
+
+#experience h4{
+	font-size: 16px;
+	/*font-family: 'Dancing Script', cursive;*/
+	font-family: 'Antic Slab', serif;
+}
+
+#experience h6{
+	font-size: 16px;
+	font-family: 'Antic Slab', serif;
+}
 #qualities{ border-top: 1px solid black; }
 #qualities #nav{margin: -7px auto 0px; padding-left: 0px; text-align: center; width: 80%;}
 #qualities #nav li { display: inline-block; padding: 40px 0px 30px; position: relative; width: 24%;}
