@@ -4,6 +4,7 @@ body{
 	letter-spacing: 1px;
 	color: #fff;
 	background-color:#293132;
+	scroll-behavior: smooth;
 }
 
 a{
@@ -83,7 +84,7 @@ nav a {
 
 .intro h5{
 	font-size: 20px;
-	font-family: 'Antic Slab';
+	font-family: 'Antic Slab', serif;
 }
 
 .intro h1{
@@ -93,7 +94,7 @@ nav a {
 
 .intro h3{
 	font-size: 16px;
-	font-family: 'Antic Slab';
+	font-family: 'Antic Slab', serif;
 }
 
 
@@ -105,12 +106,12 @@ nav a {
 #education h4{
 	font-size: 16px;
 	/*font-family: 'Dancing Script', cursive;*/
-	font-family: 'Antic Slab';
+	font-family: 'Antic Slab', serif;
 }
 
 #education h6{
 	font-size: 16px;
-	font-family: 'Antic Slab';
+	font-family: 'Antic Slab', serif;
 }
 
 #edu1, #edu2{
@@ -127,7 +128,7 @@ nav a {
 }
 #skills h2{
 	font-size: 45px;
-	font-family: 'Antic Slab';
+	font-family: 'Antic Slab', serif;
 	margin-bottom: 25px;
 }
 
@@ -144,3 +145,53 @@ li span{
 	margin-bottom: 20px;
 	width: 150px;
 }
+
+#skills table{
+	background-color: #f2f7f2;
+	color: #293132;
+}
+#skills table th{
+	font-size: 25px;
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 3px;
+}
+
+#skills table td{
+	font-family: 'Antic Slab', serif;
+	font-size: 18px;
+}
+
+#skills .container{
+	padding: 0;
+}
+#skills ul{
+	background-color: #f2f7f2;
+	padding: 0;
+	margin: 0;
+}
+#skills .title{
+	font-size: 25px;
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 3px;
+	font-weight: 600;
+	border-bottom: 2px solid #293132;
+}
+
+#skills ul li{
+	font-family: 'Antic Slab', serif;
+	font-size: 18px;
+	color: #293132;
+	border-bottom: 1px solid #293132;
+	padding: 12px;
+}
+
+#qualities{ border-top: 1px solid black; }
+#qualities #nav{margin: -7px auto 0px; padding-left: 0px; text-align: center; width: 80%;}
+#qualities #nav li { display: inline-block; padding: 40px 0px 30px; position: relative; width: 24%;}
+#qualities #nav li a{font-size:28px; font-family: 'Raleway'; color:#000; cursor: pointer; letter-spacing:1px;}
+#qualities #nav li:before { position: absolute; content: ''; top: 0; width: 0%; height: 12px; background-color: #C7A481; left: 0; transition: width .4s linear; }
+#qualities #nav li.active:before{ width: 100%; left: 0%; }
+#qualities #nav li.active{font-weight: 600;}
+/*#qualities #wrapper { background-color: #f2f2f2; }*/
+#qualities .content{ width: 50%; padding: 50px 25px; margin: auto; text-align: center; font-size: 20px; display: none;}
+#qualities .content img{margin: auto; width: 250px; height: 100%; display: flex; margin-bottom: 20px}
