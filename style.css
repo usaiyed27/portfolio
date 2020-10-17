@@ -1,13 +1,9 @@
-html{
-	/*background-color:#28536B;*/
-	background-color:#293132;
-}
-
 body{
 	padding: 0;
 	margin: 0;
-	font-family: 'Dancing Script', cursive;
 	letter-spacing: 1px;
+	color: #fff;
+	background-color:#293132;
 }
 
 a{
@@ -16,10 +12,17 @@ a{
 
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
+}
+
+h1,h3,h5{
 	margin-bottom: 25px;
 }
 
-header{
+h2,h4,h6{
+	margin-bottom: 10px;
+}
+
+body header{
 	border-right: 5px double #fff;
 	width: 120px;
 	height: 100vh;
@@ -49,17 +52,18 @@ nav a {
 	padding: 15px;
 	font-size: 20px;
 	letter-spacing: 1px;
+	font-family: 'Dancing Script', cursive;
 }
 
-.container{
-	padding: 200px;
+#super-container{
+	padding: 0 200px;
 	margin-left: 120px;
-	height: 100vh;
 }
 #about{
 	display: flex;
 	align-items: center;
 	/*background: cadetblue;*/
+	padding: 200px 0 0px;
 }
 
 .profile{
@@ -77,16 +81,66 @@ nav a {
 	color: #fff;
 }
 
-.intro h4{
+.intro h5{
 	font-size: 20px;
 	font-family: 'Antic Slab';
 }
 
 .intro h1{
 	font-size: 75px;
+	font-family: 'Dancing Script', cursive;
 }
 
-.intro h2{
-	font-size: 18px;
+.intro h3{
+	font-size: 16px;
 	font-family: 'Antic Slab';
+}
+
+
+#education h2{
+	font-size: 20px;
+	font-family: 'Antic Slab';
+}
+
+#education h4{
+	font-size: 16px;
+	/*font-family: 'Dancing Script', cursive;*/
+	font-family: 'Antic Slab';
+}
+
+#education h6{
+	font-size: 16px;
+	font-family: 'Antic Slab';
+}
+
+#edu1, #edu2{
+	display: flex;
+}
+
+#education .fas{
+	font-size: 30px;
+	padding-right: 25px;
+}
+
+#skills {
+	padding: 200px 0;
+}
+#skills h2{
+	font-size: 45px;
+	font-family: 'Antic Slab';
+	margin-bottom: 25px;
+}
+
+.card{
+	border: 5px double #fff;
+	background-color: #293132;
+}
+
+ul {
+	list-style: none;
+}
+li span{
+	padding: 15px!important;
+	margin-bottom: 20px;
+	width: 150px;
 }
