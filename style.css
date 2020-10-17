@@ -2,7 +2,7 @@ body{
 	padding: 0;
 	margin: 0;
 	letter-spacing: 1px;
-	color: #fff;
+	color: #f2f7f2;
 	background-color:#293132;
 	scroll-behavior: smooth;
 }
@@ -79,7 +79,7 @@ nav a {
 }
 
 .intro{
-	color: #fff;
+	color: #fdfffc;
 }
 
 .intro h5{
@@ -129,7 +129,7 @@ nav a {
 #skills h2{
 	font-size: 45px;
 	font-family: 'Antic Slab', serif;
-	margin-bottom: 25px;
+	margin-bottom: 75px;
 }
 
 .card{
@@ -183,6 +183,36 @@ li span{
 	color: #293132;
 	border-bottom: 1px solid #293132;
 	padding: 12px;
+}
+
+#experience {
+	padding-bottom: 200px;
+}
+#experience h2{
+	font-size: 45px;
+	font-family: 'Antic Slab', serif;
+	margin-bottom: 75px;
+}
+
+#experience .first-col{
+	position: relative;
+}
+
+#experience1, #experience2{
+	padding: 0 40px;
+}
+
+#experience .first-col:after{
+	content: '.';
+	font-size: 120px;
+	position: absolute;
+	right: 0;
+	bottom: 40%;
+	margin-right: -15px;
+}
+
+#experience .second-col{
+	border-left: 1px solid #fff;
 }
 
 #qualities{ border-top: 1px solid black; }
