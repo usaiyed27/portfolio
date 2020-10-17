@@ -1,21 +1,31 @@
 html{
-	background-color:#28536B;
+	/*background-color:#28536B;*/
+	background-color:#293132;
 }
 
 body{
 	padding: 0;
 	margin: 0;
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 1px;
 }
 
 a{
 	text-decoration: none;
 }
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	margin-bottom: 25px;
+}
+
 header{
 	border-right: 5px double #fff;
 	width: 120px;
 	height: 100vh;
 	display: grid;
 	align-content: end;
+	position: fixed;
 }
 
 #logo{
@@ -30,8 +40,6 @@ header{
 	font-size: 25px;
 	border-radius: 50%;
 	padding: 15px;
-	font-family: 'Dancing Script', cursive;
-
 }
 
 nav a {
@@ -41,6 +49,44 @@ nav a {
 	padding: 15px;
 	font-size: 20px;
 	letter-spacing: 1px;
-	font-family: 'Dancing Script', cursive;
+}
 
+.container{
+	padding: 200px;
+	margin-left: 120px;
+	height: 100vh;
+}
+#about{
+	display: flex;
+	align-items: center;
+	/*background: cadetblue;*/
+}
+
+.profile{
+	padding-right: 180px;
+	padding-left: 100px;
+}
+.image{
+	background-color: #fff;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+
+.intro{
+	color: #fff;
+}
+
+.intro h4{
+	font-size: 20px;
+	font-family: 'Antic Slab';
+}
+
+.intro h1{
+	font-size: 75px;
+}
+
+.intro h2{
+	font-size: 18px;
+	font-family: 'Antic Slab';
 }
