@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/usaiyed27/portfolio/issues"
   },
-  "homepage": "https://github.com/usaiyed27/portfolio#readme"
+  "homepage": "https://github.com/usaiyed27/portfolio#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  }
 }
