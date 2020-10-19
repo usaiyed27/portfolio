@@ -1,3 +1,4 @@
+
 html{
 	scroll-behavior: smooth;
 }
@@ -9,38 +10,27 @@ body{
 	background-color:#293132;
 }
 
-a{
-	text-decoration: none;
-}
+body, ul, li{ margin: 0; padding: 0; }
+ul > li { font-family: 'Antic Slab', serif; }
+a{ text-decoration: none; }
+h1,h2,h3,h4,h5,h6{ margin: 0; line-height: 1.2}
+h2,h3,h4,h5,h6 { font-family: 'Antic Slab', serif; }
+h1{ font-family: 'Dancing Script', cursive; font-size: 75px  }
+h2{ font-size: 45px; margin-bottom: 75px; }
+h3{ font-size: 24px }
+h4{ font-size: 22px }
+h5{ font-size: 18px }
+h6{ font-size: 16px }
+#about, #toolbox{ padding-top: 200px; } 
+#toolbox, #experience, #projects{ padding-bottom: 200px; }
 
-h1,h2,h3,h4,h5,h6{
-	margin: 0;
-}
-
-h1,h3,h5{
-	margin-bottom: 25px;
-}
-
-h2,h4,h6{
-	margin-bottom: 10px;
-}
-
-body header{
+header{
 	border-right: 5px double #fff;
 	width: 50px;
 	height: 100vh;
 	display: grid;
 	align-content: end;
 	position: fixed;
-}
-
-.title-line{
-	background: #fff;
-    position: absolute;
-    display: inline;
-    width: 8%;
-    right: 0;
-    top: 0;
 }
 
 #logo{
@@ -94,22 +84,21 @@ nav a:hover span{
 	padding: 0 15px!important;
 }
 
-
 #super-container{
 	padding: 0 200px;
 	margin-left: 50px;
 }
+
 #about{
 	display: flex;
 	align-items: center;
-	/*background: cadetblue;*/
-	padding: 200px 0 0px;
 }
 
 .profile{
 	padding-right: 200px;
 	padding-left: 70px;	
 }
+
 .image{
 	background-color: #fff;
 	border-radius: 50%;
@@ -121,37 +110,12 @@ nav a:hover span{
 	color: #fdfffc;
 }
 
-.intro h5{
-	font-size: 20px;
-	font-family: 'Antic Slab', serif;
+.intro h4{
 	position: relative;
 }
 
-.intro h1{
-	font-size: 75px;
-	font-family: 'Dancing Script', cursive;
-}
-
-.intro h3{
-	font-size: 16px;
-	font-family: 'Antic Slab', serif;
-}
-
-
-#education h2{
-	font-size: 20px;
-	font-family: 'Antic Slab';
-}
-
-#education h4{
-	font-size: 16px;
-	/*font-family: 'Dancing Script', cursive;*/
-	font-family: 'Antic Slab', serif;
-}
-
-#education h6{
-	font-size: 16px;
-	font-family: 'Antic Slab', serif;
+#education {
+	margin-top: 25px;
 }
 
 #edu1, #edu2{
@@ -163,15 +127,6 @@ nav a:hover span{
 	padding-right: 25px;
 }
 
-#skills {
-	padding: 200px 0;
-}
-#skills h2{
-	font-size: 45px;
-	font-family: 'Antic Slab', serif;
-	margin-bottom: 75px;
-}
-
 ul {
 	list-style: none;
 }
@@ -181,52 +136,27 @@ li span{
 	width: 150px;
 }
 
-#skills table{
-	background-color: #f2f7f2;
-	color: #293132;
-}
-#skills table th{
-	font-size: 25px;
-	font-family: 'Dancing Script', cursive;
-	letter-spacing: 3px;
-}
-
-#skills table td{
-	font-family: 'Antic Slab', serif;
-	font-size: 18px;
-}
-
-#skills .container{
+#toolbox .container{
 	padding: 0;
 }
-#skills ul{
+#toolbox ul{
 	background-color: #f2f7f2;
 	padding: 0;
 	margin: 0;
 }
-#skills .title{
+
+#toolbox .title{
 	font-size: 25px;
-	font-family: 'Dancing Script', cursive;
 	letter-spacing: 3px;
 	font-weight: 600;
 	border-bottom: 2px solid #293132;
+	font-family: 'Dancing Script', cursive;
 }
 
-#skills ul li{
-	font-family: 'Antic Slab', serif;
-	font-size: 18px;
+#toolbox ul li{
 	color: #293132;
 	border-bottom: 1px solid #293132;
 	padding: 12px;
-}
-
-#experience {
-	padding-bottom: 200px;
-}
-#experience h2{
-	font-size: 45px;
-	font-family: 'Antic Slab', serif;
-	margin-bottom: 75px;
 }
 
 #experience .first-col{
@@ -258,38 +188,14 @@ li span{
 	align-content: center;
 }
 
-
 #experience ul{
 	padding-left: 20px;
 	list-style: circle;
 }
 
-#experience1 h2, #experience2 h2{
-	font-size: 20px;
-	font-family: 'Antic Slab';
+#experience1 h4, #experience2 h4{;
 	padding-bottom: 15px;
-	margin-bottom: 0;
 	text-decoration: underline;
-}
-
-#experience h4{
-	font-size: 16px;
-	/*font-family: 'Dancing Script', cursive;*/
-	font-family: 'Antic Slab', serif;
-}
-
-#experience h6{
-	font-size: 16px;
-	font-family: 'Antic Slab', serif;
-}
-
-#projects {
-	padding-bottom: 200px;
-}	
-#projects h2{
-	font-size: 45px;
-	font-family: 'Antic Slab', serif;
-	margin-bottom: 75px;
 }
 
 #projects .card{
@@ -301,14 +207,18 @@ li span{
 	height: 200px;
 }
 
-/*
-#qualities{ border-top: 1px solid black; }
+#projects .btn{
+	background-color: #293132!important;
+	border: 1px solid #293132!important;
+}
+
+/*#qualities{ border-top: 1px solid black; }
 #qualities #nav{margin: -7px auto 0px; padding-left: 0px; text-align: center; width: 80%;}
 #qualities #nav li { display: inline-block; padding: 40px 0px 30px; position: relative; width: 24%;}
 #qualities #nav li a{font-size:28px; font-family: 'Raleway'; color:#000; cursor: pointer; letter-spacing:1px;}
 #qualities #nav li:before { position: absolute; content: ''; top: 0; width: 0%; height: 12px; background-color: #C7A481; left: 0; transition: width .4s linear; }
 #qualities #nav li.active:before{ width: 100%; left: 0%; }
 #qualities #nav li.active{font-weight: 600;}
-/*#qualities #wrapper { background-color: #f2f2f2; }*/
+#qualities #wrapper { background-color: #f2f2f2; }
 #qualities .content{ width: 50%; padding: 50px 25px; margin: auto; text-align: center; font-size: 20px; display: none;}
 #qualities .content img{margin: auto; width: 250px; height: 100%; display: flex; margin-bottom: 20px}*/
