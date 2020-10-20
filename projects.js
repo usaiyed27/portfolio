@@ -55,14 +55,14 @@
 // 	document.getElementById('project-row').appendChild(newCol);
 // }
 
-// function mainProjectCard(projects){
-// 	for(let x in projects){
-// 		createProjectCol();
-// 		//createProjectImage();
-// 		 createProjectTitle(x);
-// 		// createProjectDescription();
-// 		// createWebsiteLink();
-// 		// createprojectLinkIcon();
-// 		console.log(x);
-// 	};
-// }
+function mainProjectCard(projects){
+	// for(let x in projects){
+	// 	createProjectCol();
+	// 	//createProjectImage();
+	// 	 createProjectTitle(x);
+	// 	// createProjectDescription();
+	// 	// createWebsiteLink();
+	// 	// createprojectLinkIcon();
+	// 	console.log(x);
+	// };
+}
