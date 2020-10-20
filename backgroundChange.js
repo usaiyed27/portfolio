@@ -1,7 +1,7 @@
 
 window.addEventListener("keypress", function(event){
 	event.preventDefault();
-	let colorArray = ['#00A6A6', '#880044', '#2c4251', '#201E50', '3F292B', '#006D77'];
+	let colorArray = ['#00A6A6', '#880044', '#293132', '#201E50', '3F292B', '#006D77'];
 	let currentValue = '';
 		let arrayIndex = Math.floor(Math.random() * colorArray.length);
 			color = colorArray[arrayIndex];
