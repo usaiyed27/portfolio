@@ -1,0 +1,227 @@
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	padding: 0;
+	margin: 0;
+	letter-spacing: 1px;
+	color: #f2f7f2;
+	background-color:#2c4251;
+}
+
+body, ul, li{ margin: 0; padding: 0; }
+ul > li { font-family: 'Antic Slab', serif; }
+a{ text-decoration: none; }
+h1,h2,h3,h4,h5,h6{ margin: 0; line-height: 1.2}
+h2,h3,h4,h5,h6 { font-family: 'Antic Slab', serif; }
+h1{ font-family: 'Dancing Script', cursive; font-size: 75px  }
+h2{ font-size: 45px; margin-bottom: 75px; }
+h3{ font-size: 24px }
+h4{ font-size: 22px }
+h5{ font-size: 18px }
+h6{ font-size: 16px }
+#toolbox, #experience, #projects{ padding-top: 150px; } 
+/*#toolbox, { padding-bottom: 200px; }*/
+
+header{
+	border-right: 5px double #fff;
+	width: 50px;
+	height: 100vh;
+	display: grid;
+	align-content: end;
+	position: fixed;
+}
+
+#logo{
+	position: absolute;
+	top: 30px;
+	left: 5px;
+	font-family: 'Antic Slab';
+}
+#logo span{
+	background-color: #fff;
+	color: #28536B;
+	top: 20px;
+	font-size: 10px;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+nav{
+	padding-bottom: 30px;
+}
+nav a {
+	color:#fff;
+	display: flex;
+	justify-content: center;
+	bottom: 0;
+	padding: 15px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-family: 'Dancing Script', cursive;
+	position: relative;
+	transition: all 2s ease;
+	text-decoration: none!important;
+}
+
+nav a:hover{
+	color: #f2f7f2;
+}
+
+nav a span {
+	position: absolute;
+	background-color: #fff;
+	color: #2c4251;
+	padding: 0;
+	left: 100%;
+	bottom: 10px;
+	display: none;
+}
+
+nav a:hover span{
+	display: block;
+	padding: 0 15px!important;
+}
+
+#super-container{
+	padding: 0 200px;
+	margin-left: 50px;
+}
+
+#about{
+	display: flex;
+	align-items: center;
+}
+
+.profile{
+	padding-right: 200px;
+	padding-left: 70px;	
+}
+
+.image{
+	background-color: #fff;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+
+#about{
+	padding-top: 200px;
+}
+.intro h4{
+	position: relative;
+}
+
+#education {
+	margin-top: 25px;
+}
+
+#edu1, #edu2{
+	display: flex;
+}
+
+#education .fas{
+	font-size: 30px;
+	padding-right: 25px;
+}
+
+ul {
+	list-style: none;
+}
+li span{
+	padding: 15px!important;
+	margin-bottom: 20px;
+	width: 150px;
+}
+
+#toolbox .container{
+	padding: 0;
+}
+#toolbox ul{
+	background-color: #f2f7f2;
+	padding: 0;
+	margin: 0;
+}
+
+#toolbox .title{
+	font-size: 25px;
+	letter-spacing: 3px;
+	font-weight: 600;
+	border-bottom: 2px solid #2c4251;
+	font-family: 'Dancing Script', cursive;
+}
+
+#toolbox ul li{
+	color: #2c4251;
+	border-bottom: 1px solid #2c4251;
+	padding: 12px;
+}
+
+#experience .first-col{
+	position: relative;
+	border-right: 1px solid #fff;
+	text-align: right;
+}
+
+#experience1, #experience2{
+	padding: 0 40px;
+}
+
+#experience .first-col:after{
+	content: '.';
+	font-size: 120px;
+	position: absolute;
+	right: 0;
+	bottom: 30%;
+	margin-right: -15px;
+}
+
+#experience .second-col{
+	padding-left: 25px;
+	padding-top: 25px;
+}
+
+.company{
+	display: grid;
+	align-content: center;
+}
+
+#experience ul{
+	padding-left: 20px;
+	list-style: circle;
+}
+
+#experience1 h4, #experience2 h4{;
+	padding-bottom: 15px;
+	text-decoration: underline;
+}
+
+#projects .card{
+	background-color: #f2f7f2;
+	color: #2c4251;
+	border: 1px solid #fff;
+	width: 30rem!important;
+	height: 30rem!important;
+	margin-bottom: 35px;
+}
+
+#projects img{
+	height: 280px;
+}
+
+#projects .btn{
+	background-color: #2c4251!important;
+	border: 1px solid #2c4251!important;
+}
+
+/*#qualities{ border-top: 1px solid black; }
+#qualities #nav{margin: -7px auto 0px; padding-left: 0px; text-align: center; width: 80%;}
+#qualities #nav li { display: inline-block; padding: 40px 0px 30px; position: relative; width: 24%;}
+#qualities #nav li a{font-size:28px; font-family: 'Raleway'; color:#000; cursor: pointer; letter-spacing:1px;}
+#qualities #nav li:before { position: absolute; content: ''; top: 0; width: 0%; height: 12px; background-color: #C7A481; left: 0; transition: width .4s linear; }
+#qualities #nav li.active:before{ width: 100%; left: 0%; }
+#qualities #nav li.active{font-weight: 600;}
+#qualities #wrapper { background-color: #f2f2f2; }
+#qualities .content{ width: 50%; padding: 50px 25px; margin: auto; text-align: center; font-size: 20px; display: none;}
+#qualities .content img{margin: auto; width: 250px; height: 100%; display: flex; margin-bottom: 20px}*/
