@@ -47,16 +47,18 @@ function createProjectImage(obj, proDiv){
 }
 
 function createWebsiteLink(obj,proDiv){
-	const webLink = document.createElement('a');
-	webLink.className = 'btn link';
-	webLink.setAttribute('href', obj.website );
-	webLink.setAttribute('target', '_blank');
-	webLink.className = 'btn';
-	proDiv.querySelector('.card-body').appendChild(webLink);
+	if(obj.website = ''){
+		const webLink = document.createElement('a');
+		webLink.className = 'btn link';
+		webLink.setAttribute('href', obj.website );
+		webLink.setAttribute('target', '_blank');
+		webLink.className = 'btn';
+		proDiv.querySelector('.card-body').appendChild(webLink);
 
-	const linkIcon= document.createElement('i');
-	linkIcon.className = 'fas fa-globe';
-	webLink.appendChild(linkIcon);
+		const linkIcon= document.createElement('i');
+		linkIcon.className = 'fas fa-globe';
+		webLink.appendChild(linkIcon);
+	}
 }
 
 function createGithubLink(obj,proDiv){
@@ -105,7 +107,7 @@ function createProjectCol2(proDiv) {
 
 function createFlipColumnOrder(i,proDiv){
 	let col = proDiv.getElementsByClassName('col col-md-8')[0];
-	if(i > 0 && (i % 2 != 0)){
+	if(i > 0 && (i % 2 !== 0)){
 		col.classList.add('order-md-2');
 		col.classList.add('order-sm-1')
 	}

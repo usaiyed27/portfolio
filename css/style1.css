@@ -1,238 +1,195 @@
+/* Common styles for multiple elements */
+html {
+  scroll-behavior: smooth; }
 
-html{
-	scroll-behavior: smooth;
-}
-body{
-	padding: 0;
-	margin: 0;
-	letter-spacing: 1px;
-	color: #2c4251;
-	background-color: #ffffff;
-}
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px; }
 
-body, ul, li{ margin: 0; padding: 0; }
-a{ text-decoration: none; }
-h1,h2,h3,h4,h5,h6{  line-height: 1.2}
-h2,h3,h4,h5,h6, ul > li { font-family: 'Antic Slab', serif; }
-h1{ font-family: 'Dancing Script', cursive; font-size: 45px  margin: 10px 0;}
-h2{ font-size: 35px; margin-bottom: 45px; }
-h3{ font-size: 22px }
-h4{ font-size: 20px }
-h5{ font-size: 16px }
-h6{ font-size: 14px }
-#about,#toolbox, #experience{padding: 50px 40px;}
+a {
+  text-decoration: none; }
 
-#mobile-view nav{
-	background-color: #f5f5f5;
-	box-shadow: 0px 0px 10px -3px #000;
-}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2; }
 
-#mobile-view nav a{	color: #2c4251; }
+h2, h3, h4, h5, h6, ul > li {
+  font-family: 'Antic Slab', serif; }
 
-#desktop-view {
-	display: none;
-}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 55px;
+  margin: 10px 0; }
 
+h2 {
+  font-size: 45px;
+  margin-bottom: 45px; }
 
-.logo span{
-	background-color: #2c4251;
-	color: #fff;
-	top: 20px;
-	font-size: 10px;
-	border-radius: 50%;
-	padding: 10px;
-}
+h3 {
+  font-size: 24px; }
 
-ul.navbar-nav{
-	padding: 10px;
-}
-nav a {
-	color:#ffffff;
-	display: flex;
-	justify-content: center;
-	bottom: 0;
-	padding: 15px;
-	font-size: 16px;
-	letter-spacing: 1px;
-	font-family: 'Antic Slab', cursive;
-	position: relative;
-	transition: all 2s ease;
-	text-decoration: none!important;
-}
+h4 {
+  font-size: 22px;
+  margin-bottom: 10px; }
 
-nav a:hover{
-	color: #ffffff;
-}
+h5 {
+  font-size: 18px; }
 
+h6 {
+  font-size: 16px; }
 
-nav a:hover span{
-	display: block;
-	padding: 0 15px!important;
-}
+#about, #toolbox, #experience {
+  padding: 50px 40px; }
 
-#about{
-	display: flex;
-	align-items: center;
-	position: relative;
-	margin-top: 70px
-}
+#toolbox h2, #experience h2 {
+  color: #ffffff;
+  text-align: center; }
 
-#opening-bg{
-	display: none;
-}
+#toolbox, #experience {
+  background-color: #2c4251;
+  color: #ffffff;
+  position: relative; }
 
-#education {
-	margin-top: 25px;
-}
+/* End of Common Styles */
+/* Website Logo */
+.logo span {
+  background-color: #2c4251;
+  color: #ffffff;
+  top: 20px;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 10px; }
 
-#edu1, #edu2{
-	display: flex;
-}
+/* Mobile Navigation for small devices */
+#mobile-nav nav {
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px -3px #000;
+  max-width: 100vw; }
 
-#education .fas{
-	font-size: 30px;
-	padding-right: 25px;
-}
+#mobile-nav a {
+  color: #2c4251; }
 
-ul {
-	list-style: none;
-}
-li span{
-	padding: 15px!important;
-	margin-bottom: 20px;
-	width: 150px;
-}
+/* Desktop Navigation */
+#desktop-nav {
+  display: none; }
 
-#toolbox {
-	background-color: #2c4251;
-	color: #ffffff;
-	position: relative;
-}
+/* About Section */
+#about {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 70px; }
 
-#toolbox h2{
-	text-align: center;
-}
+#about #opening-bg {
+  display: none; }
 
-#toolbox ul{
-	background-color: #ffffff;
-	margin-bottom: 35px;
-}
+#about h1, #about h4, #about h5, #about h5 {
+  color: #2c4251; }
 
-#toolbox .title{
-	font-size: 25px;
-	letter-spacing: 3px;
-	font-weight: 600;
-	border-bottom: 2px solid #2c4251;
-	font-family: 'Dancing Script', cursive;
-}
+/* Education section with About section */
+#education #edu1 {
+  margin-top: 25px; }
 
-#toolbox ul li{
-	color: #2c4251;
-	border-bottom: 1px solid #2c4251;
-	padding: 12px;
-}
+#education #edu1, #education #edu2 {
+  display: flex; }
 
-#projects{padding:50px 0px;}
+#education .fas {
+  font-size: 30px;
+  padding-right: 25px; }
 
-#projects h2{
-	text-align: center;
-	margin-bottom: 15px;
-}
+/* Toolbox(skills) Section */
+#toolbox ul {
+  background-color: #ffffff; }
 
-#projects h6{
-	margin-bottom: 75px;
-}
-#projects .projectcard{
-    color: #2c4251;
-    position: relative;
-    margin-bottom: 55px;
-}
+#toolbox li {
+  color: #2c4251;
+  border-bottom: 1px solid #2c4251;
+  padding: 12px; }
 
-#projects img{
-	height: 15rem;
-	border: 5px double #2c4251;
-}
+#toolbox .title {
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  border-bottom: 2px solid #2c4251;
+  font-family: 'Dancing Script', cursive; }
 
-#projects .card-body {
-	padding: 0 20px ;
-}
-#projects h3 {
-	text-decoration: underline;
-	font-weight: 600;
-	font-family: 'Dancing Script',cursive;
-	letter-spacing: 2px;
-} 
+#projects {
+  padding: 50px 0px; }
 
-#projects .card-text{
-	font-family: 'Antic Slab', serif;
-}
+#projects h2 {
+  color: #2c4251;
+  text-align: center; }
 
-#projects .btn{
-	background-color: #2c4251!important;
-	border: 1px solid #2c4251!important;
-	color: #ffffff;
-	margin-right: 15px;
-}
+#projects h6 {
+  margin-top: 15px;
+  margin-bottom: 75px; }
 
-#experience {
-	background-color: #2c4251;
-	color: #ffffff;
-	position: relative;
-}
-#experience h2{
-	text-align: center;
-}
+#projects .projectcard {
+  margin-bottom: 55px; }
 
-#experience1, #experience2{
-	padding: 0 0px;
-	border-left: 1px solid #ffffff;
-	margin-bottom: 45px;
-}
+.projectcard img {
+  height: 15rem;
+  border: 5px double #2c4251;
+  margin-bottom: 25px; }
 
-#experience .first-col:after{
-	content: '.';
-	font-size: 120px;
-	position: absolute;
-	left: 0;
-	top: 50%;
-	margin-left: -15px;
-}
+.projectcard .card-body {
+  padding: 0 20px; }
 
-#experience .second-col{
-	padding-top: 25px;
-}
+.projectcard h3 {
+  text-decoration: underline;
+  font-weight: 600;
+  font-family: 'Dancing Script',cursive;
+  letter-spacing: 2px; }
 
-.company{
-	display: grid;
-	align-content: center;
-}
+.projectcard .card-text {
+  font-family: 'Antic Slab', serif; }
 
-#experience ul{
-	padding-left: 20px;
-	list-style: circle;
-}
+.projectcard .btn {
+  background-color: #2c4251 !important;
+  border: 1px solid #2c4251 !important;
+  color: #ffffff;
+  margin-right: 15px; }
 
-#experience1 h4, #experience2 h4{;
-	padding-bottom: 15px;
-	text-decoration: underline;
-}
+#experience1, #experience2 {
+  padding: 0 0px;
+  border-left: 1px solid #ffffff;
+  margin-bottom: 45px; }
 
-footer{
-	color: #2c4251;
-	padding: 50px;
-	text-align: center
-}
+#experience .first-col:after {
+  content: '.';
+  font-size: 120px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-left: -15px; }
 
-footer a{
-	color: #2c4251;
-}
+#experience .second-col {
+  padding-top: 25px; }
+
+.company {
+  display: grid;
+  align-content: center; }
+
+#experience ul {
+  padding-left: 20px;
+  list-style: circle; }
+
+#experience1 h4, #experience2 h4 {
+  text-decoration: underline; }
+
+footer {
+  color: #2c4251;
+  padding: 50px;
+  text-align: center; }
+
+footer a {
+  color: #2c4251; }
+
 footer i {
-	color: #b20000;
-}
+  color: #b20000; }
 
 @media only screen and (min-width: 768px) {
-
-	#toolbox:after {
+  #toolbox:after {
     content: '';
     position: absolute;
     top: 0;
@@ -240,42 +197,8 @@ footer i {
     z-index: 1;
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
-    border-top: 50px solid #ffffff;
-	}
-	#toolbox::before {
-	    content: '';
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    z-index: 1;
-	    border-left: 145px solid transparent;
-	    border-right: 145px solid transparent;
-	    border-bottom: 50px solid #ffffff;
-	}
-#toolbox h2{
-	text-align: right;
-}
-#projects{padding: 50px 40px;}
-
-#projects h2{text-align: left;}	
-#projects img{
-    border-radius: 25px 0 25px 0;
-}
-
-#experience h2 {
-	text-align: right;
-}
-#experience::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0px;
-    z-index: 1;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-top: 50px solid #ffffff;
-}
-#experience::before {
+    border-top: 50px solid #ffffff; }
+  #toolbox::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -283,105 +206,119 @@ footer i {
     z-index: 1;
     border-left: 145px solid transparent;
     border-right: 145px solid transparent;
-    border-bottom: 50px solid #ffffff;
-}
-#experience .first-col{
-	position: relative;
-	border-right: 1px solid #ffffff;
-	text-align: right;
-}
+    border-bottom: 50px solid #ffffff; }
+  #toolbox h2, #experience h2 {
+    text-align: right; }
+  #projects {
+    padding: 50px 40px; }
+  #projects h2 {
+    text-align: left; }
+  #projects img {
+    border-radius: 25px 0 25px 0; }
+  #experience::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 1;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 50px solid #ffffff; }
+  #experience::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-left: 145px solid transparent;
+    border-right: 145px solid transparent;
+    border-bottom: 50px solid #ffffff; }
+  #experience .first-col {
+    position: relative;
+    border-right: 1px solid #ffffff;
+    text-align: right; }
+  #experience1, #experience2 {
+    padding: 0 40px;
+    border-left: 0px;
+    margin-bottom: 0px; }
+  #experience .first-col:after {
+    content: '.';
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -15px;
+    margin-right: -15px; }
+  #experience .second-col {
+    padding-left: 25px;
+    padding-top: 25px; } }
 
-#experience1, #experience2{
-	padding: 0 40px;
-	border-left: 0px;
-	margin-bottom: 0px;
-}
+@media only screen and (min-width: 992px) {
+  #about, #toolbox, #experience, #projects {
+    padding: 100px 80px;
+    margin-left: 50px; }
+  #mobile-nav {
+    display: none !important; }
+  #desktop-nav > * {
+    display: block !important; }
+  #desktop-nav {
+    border-right: 5px double #ffffff;
+    width: 50px;
+    height: 100vh;
+    display: grid;
+    align-content: end;
+    position: fixed;
+    background-color: #2c4251; }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    font-family: 'Antic Slab'; }
+  nav a {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    padding: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Antic Slab', cursive;
+    position: relative;
+    transition: all 2s ease;
+    text-decoration: none !important; }
+  nav a span {
+    position: absolute;
+    background-color: #ffffff;
+    color: #2c4251;
+    padding: 0;
+    left: 100%;
+    bottom: 10px;
+    display: none; }
+  nav a:hover {
+    color: #ffffff; }
+  nav a:hover span {
+    display: block;
+    padding: 0 15px !important; }
+  #about {
+    height: 50vh;
+    margin-top: 0px; }
+  #about #opening-bg {
+    display: block;
+    content: '';
+    position: absolute;
+    background-image: url("../images/mandala.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0%;
+    height: 100%;
+    overflow: hidden; } }
 
-#experience .first-col:after{
-	content: '.';
-	font-size: 120px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	margin-top: -15px;
-	margin-right:-15px;
-	}
-
-#experience .second-col{
-	padding-left: 25px;
-	padding-top: 25px;
-}
-
-}
-
-@media only screen and (min-width: 992px){
-	#about,#toolbox, #experience, #projects{padding: 100px 80px; margin-left:50px}
-	h1{ font-family: 'Dancing Script', cursive; font-size: 75px  }
-	h2{ font-size: 45px; margin-bottom: 75px; }
-	h3{ font-size: 24px }
-	h4{ font-size: 22px }
-	h5{ font-size: 18px }
-	h6{ font-size: 16px }
-	#mobile-view {display: none!important;}
-	#desktop-view > *{display: block!important;}
-	#desktop-view{
-	border-right: 5px double #ffffff;
-	width: 50px;
-	height: 100vh;
-	display: grid;
-	align-content: end;
-	position: fixed;
-	background-color: #2c4251;
-	}
-
-	.logo{
-	position: absolute;
-	top: 30px;
-	left: 5px;
-	font-family: 'Antic Slab';
-	}
-
-	nav a span {
-	position: absolute;
-	background-color: #ffffff;
-	color: #2c4251;
-	padding: 0;
-	left: 100%;
-	bottom: 10px;
-	display: none;
-}
-	#about{
-		height: 50vh;
-		margin-top: 0px;
-	}
-	#opening-bg{
-	display: block;
-	content: '';
-	position:absolute;
-	background-image: url('../images/mandala.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	top: 0;
-	right: 0%;
-	height:100%;
-	overflow: hidden;
-	}
-
-	
-
-}
-@media only screen and (min-width: 1200px){
-	#about,#toolbox, #experience, #projects{padding: 150px 220px; margin-left:50px}
-	#about{height: 100vh;}
-	#projects img{height: 22rem;}
-}
-/*#qualities{ border-top: 1px solid black; }
-#qualities #nav{margin: -7px auto 0px; padding-left: 0px; text-align: center; width: 80%;}
-#qualities #nav li { display: inline-block; padding: 40px 0px 30px; position: relative; width: 24%;}
-#qualities #nav li a{font-size:28px; font-family: 'Raleway'; color:#000; cursor: pointer; letter-spacing:1px;}
-#qualities #nav li:before { position: absolute; content: ''; top: 0; width: 0%; height: 12px; background-color: #C7A481; left: 0; transition: width .4s linear; }
-#qualities #nav li.active:before{ width: 100%; left: 0%; }
-#qualities #nav li.active{font-weight: 600;}
-#qualities #wrapper { background-color: #ffffff; }
-#qualities .content{ width: 50%; padding: 50px 25px; margin: auto; text-align: center; font-size: 20px; display: none;}
-#qualities .content img{margin: auto; width: 250px; height: 100%; display: flex; margin-bottom: 20px}*/
+@media only screen and (min-width: 1200px) {
+  #about, #toolbox, #experience, #projects {
+    padding: 150px 220px;
+    margin-left: 50px; }
+  #about {
+    height: 100vh; }
+  #projects img {
+    height: 22rem; } }

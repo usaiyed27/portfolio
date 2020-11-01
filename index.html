@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>Portfolio Website</title>
-	<meta charset="utf">
+	<meta charset="utf-8">
 	<!-- Below meta tag means the browser will render the width of the page
 		 at the width of its own screen size.-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<link rel="stylesheet" type="text/css" href="css\style1.css">
-	<script type="text/javascript" src="js/projects.js"></script>
-	<script type="text/javascript" src="js/backgroundChange.js"></script>
-	<!-- <script type="text/javascript" src="js/quote.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<script src="js/projects.js"></script>
+<!-- 	<script type="text/javascript" src="js/backgroundChange.js"></script> -->
+	<script type="text/javascript" src="js/quote.js"></script>
 </head>	
 <body>
-	<header id="desktop-view">
+	<header id="desktop-nav">
 		<a href="#about" class="logo"><span>US</span></a>
 	<nav id="navigation">
 		<a href="#about"><i class="fas fa-user-circle"></i><span>About</span></a>
@@ -29,7 +29,7 @@
 		<a href="#experience"><i class="fas fa-briefcase"></i><span>Experience</span></a>
 	</nav>
 	</header>
-	<header id="mobile-view">
+	<header id="mobile-nav">
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 		  <a class="navbar-brand logo" href="#about"><span>US</span></a>
 		  <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-8">
-					 	<div class="intro">
+					 	<div class="introduction">
 							<h6><i class="far fa-hand-paper"></i> Hello, I'm</h6>
 							<h1 data-aos='fade-up' data-aos-duration="1000">Urusa Saiyed</h1>
 							<h5>I am a Texas based Web Developer learning to live, code, and learn. I passionate about 
@@ -80,7 +80,7 @@
 										<i class="fas fa-user-graduate"></i>
 									</div>
 									<div class="details">
-										<h4><strong>Associates in Web Desgin & Administration</strong></h5>
+										<h4><strong>Associates in Web Desgin & Administration</strong></h4>
 										<h5>Joliet Junior College, Joliet, IL</h5>
 										<h6>3.7/4.0</h6>
 									</div>
@@ -93,7 +93,7 @@
 					</div>
 				</div>
 			</div>		
-			<img id="opening-bg" src="images/mandala.jpg" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-offset="300">
+			<img id="opening-bg" src="images/mandala.jpg" alt="opening background image" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-offset="300">
 		</div>
 		<div id="toolbox">
 			<h2 data-aos="fade-left" data-aos-duration="2000">Toolbox <i class="fas fa-toolbox"></i></h2>
@@ -126,7 +126,7 @@
 								<li>PHP/MySQL</li>
 								<li>Responsive Design</li>
 								<li>Git/Github</li>
-								<li>Photoshop</li>
+								<li>Agile SDLC</li>
 							</ul>	
 						</div>
 					</div>
@@ -137,123 +137,48 @@
 			<h6><em>Note: The project section is developed using Javascript. The projects are stored as objects in an array.
 			 And I have developed HTML elements dynamically using JavaScript. </em></h6>
 			<div class="container" id="project-container">
-				<!-- <div class="row">
-					<div class="col-8 order-2">
-						<div class="" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
-						  <img src="images/quinones.png" class="card-img-top" alt="">
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="">
-						    <h5 class="card-title">Quinones Design Build</h5>
-						    <p class="card-text">Custom WordPress website built using techonologies HTML5, CSS3, Bootstrap, and PHP.
-						     </p>
-						    <a href="https://www.quinonesdesignbuild.com/" class="btn" target="_blank"><i class="fas fa-globe"></i></a>
-						  </div>
-					</div> -->
-
-					<!-- <div class="col-6">
-						<div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
-						  <img src="quinones.png" class="card-img-top" alt="">
-						  <div class="card-body">
-						    <h5 class="card-title">Quinones Design Build</h5>
-						    <p class="card-text">Custom WordPress website built using techonologies HTML5, CSS3, Bootstrap, and PHP.
-						     </p>
-						    <a href="https://www.quinonesdesignbuild.com/" class="btn" target="_blank"><i class="fas fa-globe"></i></a>
-						  </div>
-						</div>
-					</div>	 -->
-					<!-- <div class="col-6"> -->
-						 <!--  <img src="quinones.png" alt=""> -->
-						    <!-- <h5>Quinones Design Build</h5>
-						    <p>Custom WordPress website built using techonologies HTML5, CSS3, Bootstrap, and PHP.
-						     </p>
-						    <a href="https://www.quinonesdesignbuild.com/" class="btn" target="_blank"><i class="fas fa-globe"></i></a>
-					</div>	 -->
-					<!-- <div class="col-6">
-						<div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
-						  <img src="quinones.png" class="card-img-top" alt="">
-						  <div class="card-body">
-						    <h5 class="card-title">Quinones Design Build</h5>
-						    <p class="card-text">Custom WordPress website built using techonologies HTML5, CSS3, Bootstrap, and PHP.
-						     </p>
-						    <a href="https://www.quinonesdesignbuild.com/" class="btn" target="_blank"><i class="fas fa-globe"></i></a>
-						  </div>
-						</div>
-					</div>	
-					<div class="col-6">
-						<div class="card" style="width: 20rem;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="300" data-aos-offset="50">
-						  <img src="lacasa.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h5 class="card-title">La Casa,Inc</h5>
-						    <p class="card-text">Custom WordPress website built using techonologies HTML5, CSS3, Bootstrap, and PHP.</p>
-						     <a href="https://www.lacasainc.org/" class="btn btn-primary" target="_blank"><i class="fas fa-globe"></i></a>
-						  </div>
-						</div>
-					</div>	
-					<div class="col-6">
-						<div class="card" style="width: 20rem;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" data-aos-offset="100">
-						  <img src="facerecognition.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h5 class="card-title">Face Recognition App</h5>
-						    <p class="card-text">Web Application that detects face built using React, Node, Express.</p>
-						    <a href="#" class="btn btn-primary" target="_blank"><i class="fas fa-globe"></i></a>
-						  </div>
-						</div>
-					</div>	
-					<div class="col-6">
-						<div class="card" style="width: 20rem;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="300" data-aos-offset="100">
-						  <img src="facerecognition.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h5 class="card-title">Face Recognition App</h5>
-						    <p class="card-text">Web Application that detects face built using React, Node, Express.</p>
-						    <a href="#" class="btn btn-primary" target="_blank"><i class="fas fa-globe"></i></a>
-						  </div>
-						</div>
-					</div>-->			
+				<!-- Projects are created dynamically using Javascript -->
 			</div>
-		</div>
 		</div>
 		<div id="experience">
 			<h2 data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-briefcase"></i> Experience</h2><br/>
 		    <div class="container">
-		  <div class="row" id="experience1">
-			 <div class="col-12 col-md-4 col-lg-5 first-col company" style="text-align: ">
-				<h6>May 2019 - Mar 2020</h6>
-				<h5>Spectrum Technologies, El Paso,TX </h5>
-			 </div>
-			 <div class="col-12 col-md-8 col-lg-7 second-col company">
-				<h4>Web Developer</h4>
-				<ul>
-					<li>Developed interactive and modern websites using WordPress 
-						CMS for clients as per Scope of Work.</li>
-					<li>Converted sketches provided by the designer into functional,
-						interactive, and responsive websites.</li>
-					<li>Maintained websites, including content updates, debugging,
-						enhancements, and testing.</li>	
-				</ul>
-			 </div>
-		 	</div>
-		 	 <div class="row" id="experience2">
-			 <div class="col-12 col-md-4 col-lg-5 first-col company">
-			 	<h6>Jan 2019 - Apr 2019</h6>
-				<h5>Spectrum Technologies, El Paso,TX</h5>
-			 </div>
-			 <div class="col-12 col-md-8 col-lg-7 second-col company">
-				<h4>Web Developer Intern</h4>
-			 	<ul>
-					<li>Collaborated with project manager and lead web developer to
-						develop websites.</li>
-					<li>Maintained existing code, functionality, and made necessary
-						changes to the websites to enhance user experience.</li>
-					<li>Created custom WordPress pages using HTML, CSS, PHP, and
-						Bootstrap.</li>	
-				</ul>
-			 </div>
-		 	</div>
-		 </div>
-		    </div>
-	    </div>
+			 	 <div class="row" id="experience1">
+				 <div class="col-12 col-md-4 col-lg-5 first-col company">
+					<h6>May 2019 - Mar 2020</h6>
+					<h5>Spectrum Technologies, El Paso,TX </h5>
+				 </div>
+				 <div class="col-12 col-md-8 col-lg-7 second-col company">
+					<h4>Web Developer</h4>
+					<ul>
+						<li>Developed interactive and modern websites using WordPress 
+							CMS for clients as per Scope of Work.</li>
+						<li>Converted sketches provided by the designer into functional,
+							interactive, and responsive websites.</li>
+						<li>Maintained websites, including content updates, debugging,
+							enhancements, and testing.</li>	
+					</ul>
+				 </div>
+			 	 </div>
+			 	 <div class="row" id="experience2">
+					<div class="col-12 col-md-4 col-lg-5 first-col company">
+					 	<h6>Jan 2019 - Apr 2019</h6>
+						<h5>Spectrum Technologies, El Paso,TX</h5>
+					</div>
+					<div class="col-12 col-md-8 col-lg-7 second-col company">
+						<h4>Web Developer Intern</h4>
+					 	<ul>
+							<li>Collaborated with project manager and lead web developer to
+								develop websites.</li>
+							<li>Maintained existing code, functionality, and made necessary
+								changes to the websites to enhance user experience.</li>
+							<li>Created custom WordPress pages using HTML, CSS, PHP, and
+								Bootstrap.</li>	
+						</ul>
+					</div>
+			 	 </div>
+			</div>
+		</div>
 		<footer>
 			<div class="container">
 				<div class="row">
@@ -266,7 +191,7 @@
 				</div>
 			</div>
 		</footer>	
-		</div>		
+	</div>		
 	<script>
 	  AOS.init();
 	</script>
