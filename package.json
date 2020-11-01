@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "quote.js",
+  "main": "projects.js",
   "scripts": {
     "compile:sass" : "node-sass scss/style.scss css/style1.css -w"
     "build:html" : "index.html",

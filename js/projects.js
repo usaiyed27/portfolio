@@ -49,15 +49,15 @@ function createProjectImage(obj, proDiv){
 function createWebsiteLink(obj,proDiv){
 	if(obj.website = ''){
 		const webLink = document.createElement('a');
-		webLink.className = 'btn link';
-		webLink.setAttribute('href', obj.website );
-		webLink.setAttribute('target', '_blank');
-		webLink.className = 'btn';
-		proDiv.querySelector('.card-body').appendChild(webLink);
+			webLink.className = 'btn link';
+			webLink.setAttribute('href', obj.website );
+			webLink.setAttribute('target', '_blank');
+			webLink.className = 'btn';
+			proDiv.querySelector('.card-body').appendChild(webLink);
 
-		const linkIcon= document.createElement('i');
-		linkIcon.className = 'fas fa-globe';
-		webLink.appendChild(linkIcon);
+			const linkIcon= document.createElement('i');
+			linkIcon.className = 'fas fa-globe';
+			webLink.appendChild(linkIcon);
 	}
 }
 
