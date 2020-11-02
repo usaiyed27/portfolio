@@ -6,7 +6,7 @@
   "scripts": {
     "compile:sass": "node-sass scss/style.scss css/style1.css -w",
     "build:html": "index.html",
-    "build": "build:html"
+    "build": "npm build"
   },
   "repository": {
     "type": "git",
