@@ -4,9 +4,9 @@
   "description": "",
   "main": "projects.js",
   "scripts": {
-    "compile:sass" : "node-sass scss/style.scss css/style1.css -w"
-    "build:html" : "index.html",
-    "build" : "npm run build:html"
+    "compile:sass": "node-sass scss/style.scss css/style1.css -w",
+    "build:html": "index.html",
+    "build": "build:html"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/usaiyed27/portfolio#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1"
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "netlify-cli": "^2.67.0"
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
