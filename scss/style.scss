@@ -1,40 +1,45 @@
-/* Common styles for multiple elements */
+
+$basePadding : 50px;
+$baseMargin : 30px 0;
 $backgroundColor: #2c4251;
 $lighttextColor: #ffffff;
 $darktextColor: #2c4251;
+$AnticFont : 'Antic Slab', serif;
+$DancingFont : 'Dancing Script', cursive;
+$letterSpacing : 1px;
+$font-sizes: ('h1' : 55px, 'h2' : 45px, 'h3' : 24px, 'h4' : 22px, 'h5' : 18px, 'h6' : 16px, );
 
 html{ scroll-behavior: smooth; }
-body, ul, li{ margin: 0; padding: 0; letter-spacing: 1px;}
+body, ul, li{ margin: 0; padding: 0; letter-spacing: $letterSpacing; line-height: 1.5}
 a{ text-decoration: none; }
-h1,h2,h3,h4,h5,h6{  line-height: 1.2}
-h2,h3,h4,h5,h6, ul > li { font-family: 'Antic Slab', serif; }
-h1{ font-family: 'Dancing Script', cursive; font-size: 55px;  margin: 10px 0;}
-h2{ font-size: 45px; margin-bottom: 45px; }
-h3{ font-size: 24px }
-h4{ font-size: 22px; margin-bottom:10px; }
-h5{ font-size: 18px }
-h6{ font-size: 16px }
-#about,#toolbox, #experience{padding: 50px 40px;}
-#toolbox h2, #experience h2 {
-	color: $lighttextColor;
-	text-align: center;
+h2,h3,h4,h5,h6, ul > li, p { font-family: $AnticFont; }
+h1 { font-family: $DancingFont; font-size: map-get($font-sizes, h1) }
+h2 { font-size: map-get($font-sizes, h2)  }
+h3 { font-size: map-get($font-sizes, h3)  }
+h4 { font-size: map-get($font-sizes, h4)  }
+h5 { font-size: map-get($font-sizes, h5)  }
+h6 { font-size: map-get($font-sizes, h6)  }
+#about, #toolbox, #projects, #experience{
+	padding: ($basePadding + 50) 20px;
 }
-
 #toolbox, #experience {
 	background-color: $backgroundColor;
 	color: $lighttextColor;
 	position: relative;
+	h2{
+	color: $lighttextColor;
+	text-align: center;
+	}
 }
 /* End of Common Styles */
 
 /* Website Logo */
 .logo span{
+	font-family: $DancingFont;
 	background-color: $backgroundColor;
 	color: $lighttextColor;
-	top: 20px;
-	font-size: 10px;
 	border-radius: 50%;
-	padding: 10px;
+	padding: $basePadding - 40px;
 }
 
 /* Mobile Navigation for small devices */
@@ -44,9 +49,12 @@ h6{ font-size: 16px }
 	box-shadow: 0px 0px 10px -3px #000;
 	max-width: 100vw;
 	}
-
 	a{	
-		color: #2c4251;
+		color: $darktextColor;
+		&:active{
+			color: yellow;
+			font-weight: 700;
+		}
 	}
 }
 
@@ -59,30 +67,29 @@ h6{ font-size: 16px }
 #about{
 	display: flex;
 	align-items: center;
-	position: relative;
-	margin-top: 70px;
+	position: relative;	
+	/* Education section with About section */
+#education {	
+		text-align: center;
+		padding: $basePadding - 35px;
+		#edu1, #edu2{
+			padding: ($basePadding - 35) 0;
+		}
+		.fas{
+			font-size: 20px;
+			background: $backgroundColor;
+		    color: $lighttextColor;
+		    border-radius: 50%;
+		    text-align: center;
+		    padding: 10px;
+		    margin-bottom: 15px;
+		}
+	}
 }
 
 #about {
 	#opening-bg{
 		display: none;
-	}
-	h1,h4,h5,h5{
-		color: #2c4251;
-	}
-}
-
-/* Education section with About section */
-#education {
-	#edu1 {
-		margin-top: 25px;
-	}	
-	#edu1, #edu2{
-		display: flex;
-	}
-	.fas{
-		font-size: 30px;
-		padding-right: 25px;
 	}
 }
 
@@ -90,6 +97,7 @@ h6{ font-size: 16px }
 #toolbox {
 	ul{
 		background-color: $lighttextColor;
+		margin: $baseMargin;
 	}
 
 	li{
@@ -101,20 +109,20 @@ h6{ font-size: 16px }
 		font-size: 25px;
 		letter-spacing: 3px;
 		font-weight: 600;
-		border-bottom: 2px solid $backgroundColor;
-		font-family: 'Dancing Script', cursive;
+		font-family: $DancingFont;
 	}
 }
-#projects{padding:50px 0px;}
 
 #projects {
 	h2{
-		color: $backgroundColor;
+		color: $darktextColor;
 		text-align: center;
 	}
 	h6{
-		margin-top: 15px;
-		margin-bottom: 75px;
+		text-align: center;
+	}
+	#project-container{
+		margin: $baseMargin 0;
 	}
 	.projectcard{
     	margin-bottom: 55px;
@@ -123,45 +131,37 @@ h6{ font-size: 16px }
 
 .projectcard{
 	img{
-		height: 15rem;
 		border: 5px double #2c4251;
 		margin-bottom: 25px;
+		border-radius: 15px 0;
 	}
-	.card-body {
+	.card-details {
 		padding: 0 20px ;
 	}
 	h3 {
 	text-decoration: underline;
 	font-weight: 600;
-	font-family: 'Dancing Script',cursive;
+	font-family: $DancingFont;
 	letter-spacing: 2px;
 	}	 
 
-	.card-text{
-		font-family: 'Antic Slab', serif;
-	}
-
 	.btn{
-		background-color: #2c4251!important;
-		border: 1px solid #2c4251!important;
-		color: #ffffff;
+		background-color: $backgroundColor;
+		border: 1px solid $darktextColor;
+		color: $lighttextColor;
 		margin-right: 15px;
 	}
 }
 
 #experience1, #experience2{
-	padding: 0 0px;
-	border-left: 1px solid #ffffff;
 	margin-bottom: 45px;
-}
-
-#experience .first-col:after{
-	content: '.';
-	font-size: 120px;
-	position: absolute;
-	left: 0;
-	top: 50%;
-	margin-left: -15px;
+	ul{
+		padding-left: 20px;
+		list-style: circle;
+		li{
+			color: $lighttextColor;
+		}
+	}
 }
 
 #experience .second-col{
@@ -173,24 +173,33 @@ h6{ font-size: 16px }
 	align-content: center;
 }
 
-#experience ul{
-	padding-left: 20px;
-	list-style: circle;
-}
+#experience{
+	ul{
+		padding-left: 20px;
+		list-style: circle;
+		li{
+			color: $lighttextColor;
+		}
+	}
+}	
 
 #experience1 h4, #experience2 h4{
 	text-decoration: underline;
 }
 
-footer{
-	color: #2c4251;
-	padding: 50px;
-	text-align: center
-}
 
-footer {
+footer{
+	color: $darktextColor;
+	padding: $basePadding 0;
+	text-align: center;
+	.author span{
+		font-family: $DancingFont;
+		font-size: map-get($font-sizes, h5);
+	}
+
 	a{
-	color: #2c4251;
+	color: $darktextColor;
+	margin: $baseMargin;
 	}
 	i {
 	color: #b20000;
@@ -198,8 +207,19 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+	#about, #toolbox, #projects, #experience{ padding: ($basePadding + 50) 50px; }
+	#toolbox::before, #experience:before {
+	    content: '';
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 1;
+	    border-left: 145px solid transparent;
+	    border-right: 145px solid transparent;
+	    border-bottom: 50px solid #ffffff;
+	}
 
-	#toolbox:after {
+	#toolbox:after, #experience:after {
     content: '';
     position: absolute;
     top: 0;
@@ -210,58 +230,31 @@ footer {
     border-top: 50px solid #ffffff;
 	}
 
-	#toolbox::before {
-	    content: '';
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    z-index: 1;
-	    border-left: 145px solid transparent;
-	    border-right: 145px solid transparent;
-	    border-bottom: 50px solid #ffffff;
-	}
-
+	#about{
+	#education{
+			text-align: left;
+			#edu1, #edu2{
+				display: flex;
+				.fas{
+					margin-right: 15px;
+				}
+			}
+		}		
+	}	
 	#toolbox h2, #experience h2{
 		text-align: right;
 	}
 
-	#projects{padding: 50px 40px;}
-
 	#projects h2{text-align: left;}	
-	#projects img{
-	    border-radius: 25px 0 25px 0;
-	}
 
-	
-	#experience::after {
-	    content: '';
-	    position: absolute;
-	    top: 0;
-	    right: 0px;
-	    z-index: 1;
-	    border-left: 150px solid transparent;
-	    border-right: 150px solid transparent;
-	    border-top: 50px solid #ffffff;
-	}
-	#experience::before {
-	    content: '';
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    z-index: 1;
-	    border-left: 145px solid transparent;
-	    border-right: 145px solid transparent;
-	    border-bottom: 50px solid #ffffff;
-	}
 	#experience .first-col{
 		position: relative;
 		border-right: 1px solid #ffffff;
 		text-align: right;
+		padding: 0 ($basePadding - 35);
 	}
 
 	#experience1, #experience2{
-		padding: 0 40px;
-		border-left: 0px;
 		margin-bottom: 0px;
 	}
 
@@ -275,10 +268,11 @@ footer {
 		margin-right:-15px;
 		}
 
-	#experience .second-col{
-		padding-left: 25px;
-		padding-top: 25px;
-	}
+	footer{
+		a{
+			margin: 0;
+		}
+	}	
 }
 
 @media only screen and (min-width: 992px){
@@ -287,21 +281,25 @@ footer {
 	#mobile-nav {display: none!important;}
 	#desktop-nav > *{display: block!important;}
 	#desktop-nav{
-	border-right: 5px double #ffffff;
-	width: 50px;
-	height: 100vh;
-	display: grid;
-	align-content: end;
-	position: fixed;
-	background-color: #2c4251;
+		border-right: 5px double #ffffff;
+		width: 60px;
+		height: 100vh;
+		display: grid;
+		align-content: end;
+		position: fixed;
+		background-color: #2c4251;
+		z-index: 20;
 	}
 
-	.logo{
+	.logo {
 	position: absolute;
 	top: 30px;
 	left: 5px;
-	font-family: 'Antic Slab';
-	}
+		span{
+			background-color: $lighttextColor;
+			color: $darktextColor;
+		}
+	}	
 
 
 	nav a {
@@ -338,11 +336,6 @@ footer {
 	}
 
 	#about{
-		height: 50vh;
-		margin-top: 0px;
-	}
-
-	#about{
 		#opening-bg{
 			display: block;
 			content: '';
@@ -357,8 +350,9 @@ footer {
 		}
 	}
 }
+
 @media only screen and (min-width: 1200px){
-	#about,#toolbox, #experience, #projects{padding: 150px 220px; margin-left:50px}
+	#about,#toolbox, #experience, #projects{padding: $basePadding + 100; margin-left:50px}
 	#about{height: 100vh;}
 	#projects img{height: 22rem;}
 }

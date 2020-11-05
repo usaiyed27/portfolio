@@ -5,7 +5,7 @@ let projects = [
 		'description' : `Developed custom portfolio website that showcase my 
 		 education, skills, projects,experience. The website is developed with HTML5, CSS3, JavaScript, SASS, Bootstrap 
 		 and Animate on Scroll library.`,
-		'website' : 'https://www.quinonesdesignbuild.com', 
+		'website' : 'https://urusasaiyed.netlify.app', 
 		'github' : 'https://github.com/usaiyed27/portfolio',
 		},
 		{
@@ -41,19 +41,19 @@ window.onload = mainProjectCard;
 
 function createProjectImage(obj, proDiv){
 	const projectImage = document.createElement('img');
-	projectImage.className = 'card-img-top';
+	projectImage.className = 'card-img';
 	projectImage.setAttribute('src', obj.image);
-	proDiv.getElementsByClassName('col col-md-8')[0].appendChild(projectImage);
+	proDiv.getElementsByClassName('col-12 col-lg-8')[0].appendChild(projectImage);
 }
 
 function createWebsiteLink(obj,proDiv){
-	if(obj.website = ''){
+	if(obj.website != ''){
 		const webLink = document.createElement('a');
 			webLink.className = 'btn link';
 			webLink.setAttribute('href', obj.website );
 			webLink.setAttribute('target', '_blank');
 			webLink.className = 'btn';
-			proDiv.querySelector('.card-body').appendChild(webLink);
+			proDiv.querySelector('.project-details').appendChild(webLink);
 
 			const linkIcon= document.createElement('i');
 			linkIcon.className = 'fas fa-globe';
@@ -69,7 +69,7 @@ function createGithubLink(obj,proDiv){
 		gitLink.setAttribute('href', obj.github );
 		gitLink.setAttribute('target', '_blank');
 		gitLink.className = 'btn';
-		proDiv.querySelector('.card-body').appendChild(gitLink);
+		proDiv.querySelector('.project-details').appendChild(gitLink);
 
 		const gitIcon= document.createElement('i');
 		gitIcon.className = 'fab fa-github';
@@ -82,7 +82,7 @@ function createProjectDescription(obj,proDiv){
 	let descriptionText = document.createTextNode(obj.description);
 	projectDescription.appendChild(descriptionText);
 	projectDescription.className = 'card-text'
-	proDiv.querySelector('.card-body').appendChild(projectDescription);
+	proDiv.querySelector('.project-details').appendChild(projectDescription);
 }
 
 function createProjectTitle(obj,proDiv){
@@ -90,27 +90,24 @@ function createProjectTitle(obj,proDiv){
 	let titleText = document.createTextNode(obj.title);
 	projectTitle.appendChild(titleText);
 	projectTitle.className = 'card-title';
-	proDiv.querySelector('.card-body').appendChild(projectTitle);
+	proDiv.querySelector('.project-details').appendChild(projectTitle);
 }
 
-function createProjectCol1(proDiv) {
+function createProjectCol1(i, proDiv) {
 	const newColumn1 = document.createElement('div');
-	newColumn1.className = 'col col-md-8';
+	newColumn1.className = 'col-12 col-lg-8';
+
+	if(i > 0 && (i % 2 !== 0)){
+		newColumn1.classList.add('order-1');
+		newColumn1.classList.add('order-lg-2');
+	}
 	proDiv.appendChild(newColumn1);
 }
 
 function createProjectCol2(proDiv) {
 	const newColumn2 = document.createElement('div');
-	newColumn2.className = 'col col-md-4 card-body';
+	newColumn2.className = 'col-12 col-lg-4 project-details';
 	proDiv.appendChild(newColumn2);
-}
-
-function createFlipColumnOrder(i,proDiv){
-	let col = proDiv.getElementsByClassName('col col-md-8')[0];
-	if(i > 0 && (i % 2 !== 0)){
-		col.classList.add('order-md-2');
-		col.classList.add('order-sm-1')
-	}
 }
 
 function createProjectRow(i){
@@ -126,21 +123,20 @@ function createProjectRow(i){
 
 	document.getElementById('project-container').appendChild(newRow);
 }
+
 function mainProjectCard(){
 
 	for(let i = 0; i< projects.length; i++){
 		 let obj = projects[i];
 		 createProjectRow(i);
 		 let proDiv = document.getElementById('project#' + i);
-		 createProjectCol1(proDiv);
+		 createProjectCol1(i, proDiv);
 		 createProjectCol2(proDiv);
-		 createFlipColumnOrder(i,proDiv);
 		 createProjectImage(obj,proDiv);
 		 createProjectTitle(obj,proDiv);
 		 createProjectDescription(obj,proDiv);
 		 createWebsiteLink(obj,proDiv);
 		 createGithubLink(obj,proDiv);
-		//createprojectLinkIcon(obj,i);
 		
 	};
 }
