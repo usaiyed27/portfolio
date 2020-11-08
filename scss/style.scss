@@ -1,37 +1,7 @@
-
-$basePadding : 50px;
-$baseMargin : 30px 0;
-$backgroundColor: #2c4251;
-$lighttextColor: #ffffff;
-$darktextColor: #2c4251;
-$AnticFont : 'Antic Slab', serif;
-$DancingFont : 'Dancing Script', cursive;
-$letterSpacing : 1px;
-$font-sizes: ('h1' : 55px, 'h2' : 45px, 'h3' : 24px, 'h4' : 22px, 'h5' : 18px, 'h6' : 16px, );
-
-html{ scroll-behavior: smooth; }
-body, ul, li{ margin: 0; padding: 0; letter-spacing: $letterSpacing; line-height: 1.5}
-a{ text-decoration: none; }
-h2,h3,h4,h5,h6, ul > li, p { font-family: $AnticFont; }
-h1 { font-family: $DancingFont; font-size: map-get($font-sizes, h1) }
-h2 { font-size: map-get($font-sizes, h2)  }
-h3 { font-size: map-get($font-sizes, h3)  }
-h4 { font-size: map-get($font-sizes, h4)  }
-h5 { font-size: map-get($font-sizes, h5)  }
-h6 { font-size: map-get($font-sizes, h6)  }
-#about, #toolbox, #projects, #experience{
-	padding: ($basePadding + 50) 20px;
-}
-#toolbox, #experience {
-	background-color: $backgroundColor;
-	color: $lighttextColor;
-	position: relative;
-	h2{
-	color: $lighttextColor;
-	text-align: center;
-	}
-}
-/* End of Common Styles */
+@import 'partials/base';
+@import 'partials/project';
+@import 'partials/experience';
+@import 'partials/responsive';
 
 /* Website Logo */
 .logo span{
@@ -49,19 +19,24 @@ h6 { font-size: map-get($font-sizes, h6)  }
 	box-shadow: 0px 0px 10px -3px #000;
 	max-width: 100vw;
 	}
-	a{	
-		color: $darktextColor;
-		&:active{
-			color: yellow;
-			font-weight: 700;
-		}
-	}
+	.navbar-nav{
+		flex-direction: row;
+		li.nav-item:not(:last-child){
+			padding-right: 10px;	
+		}	
+		li.nav-item a{	
+			color: $darktextColor;
+			&:active{
+			font-weight: 700!important;
+			}
+		}															
+	}	
 }
 
 /* Desktop Navigation */
 #desktop-nav {
-	display: none;
-}
+	display:none
+	}
 
 /* About Section */
 #about{
@@ -113,82 +88,8 @@ h6 { font-size: map-get($font-sizes, h6)  }
 	}
 }
 
-#projects {
-	h2{
-		color: $darktextColor;
-		text-align: center;
-	}
-	h6{
-		text-align: center;
-	}
-	#project-container{
-		margin: $baseMargin 0;
-	}
-	.projectcard{
-    	margin-bottom: 55px;
-	}
-}
-
-.projectcard{
-	img{
-		border: 5px double #2c4251;
-		margin-bottom: 25px;
-		border-radius: 15px 0;
-	}
-	.card-details {
-		padding: 0 20px ;
-	}
-	h3 {
-	text-decoration: underline;
-	font-weight: 600;
-	font-family: $DancingFont;
-	letter-spacing: 2px;
-	}	 
-
-	.btn{
-		background-color: $backgroundColor;
-		border: 1px solid $darktextColor;
-		color: $lighttextColor;
-		margin-right: 15px;
-	}
-}
-
-#experience1, #experience2{
-	margin-bottom: 45px;
-	ul{
-		padding-left: 20px;
-		list-style: circle;
-		li{
-			color: $lighttextColor;
-		}
-	}
-}
-
-#experience .second-col{
-	padding-top: 25px;
-}
-
-.company{
-	display: grid;
-	align-content: center;
-}
-
-#experience{
-	ul{
-		padding-left: 20px;
-		list-style: circle;
-		li{
-			color: $lighttextColor;
-		}
-	}
-}	
-
-#experience1 h4, #experience2 h4{
-	text-decoration: underline;
-}
-
-
 footer{
+	font-family: $AnticFont;
 	color: $darktextColor;
 	padding: $basePadding 0;
 	text-align: center;
@@ -206,153 +107,3 @@ footer{
 	}
 }
 
-@media only screen and (min-width: 768px) {
-	#about, #toolbox, #projects, #experience{ padding: ($basePadding + 50) 50px; }
-	#toolbox::before, #experience:before {
-	    content: '';
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    z-index: 1;
-	    border-left: 145px solid transparent;
-	    border-right: 145px solid transparent;
-	    border-bottom: 50px solid #ffffff;
-	}
-
-	#toolbox:after, #experience:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0px;
-    z-index: 1;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-top: 50px solid #ffffff;
-	}
-
-	#about{
-	#education{
-			text-align: left;
-			#edu1, #edu2{
-				display: flex;
-				.fas{
-					margin-right: 15px;
-				}
-			}
-		}		
-	}	
-	#toolbox h2, #experience h2{
-		text-align: right;
-	}
-
-	#projects h2{text-align: left;}	
-
-	#experience .first-col{
-		position: relative;
-		border-right: 1px solid #ffffff;
-		text-align: right;
-		padding: 0 ($basePadding - 35);
-	}
-
-	#experience1, #experience2{
-		margin-bottom: 0px;
-	}
-
-	#experience .first-col:after{
-		content: '.';
-		font-size: 120px;
-		position: absolute;
-		right: 0;
-		top: 0;
-		margin-top: -15px;
-		margin-right:-15px;
-		}
-
-	footer{
-		a{
-			margin: 0;
-		}
-	}	
-}
-
-@media only screen and (min-width: 992px){
-	#about,#toolbox, #experience, #projects{padding: 100px 80px; margin-left:50px}
-	
-	#mobile-nav {display: none!important;}
-	#desktop-nav > *{display: block!important;}
-	#desktop-nav{
-		border-right: 5px double #ffffff;
-		width: 60px;
-		height: 100vh;
-		display: grid;
-		align-content: end;
-		position: fixed;
-		background-color: #2c4251;
-		z-index: 20;
-	}
-
-	.logo {
-	position: absolute;
-	top: 30px;
-	left: 5px;
-		span{
-			background-color: $lighttextColor;
-			color: $darktextColor;
-		}
-	}	
-
-
-	nav a {
-	color:#ffffff;
-	display: flex;
-	justify-content: center;
-	bottom: 0;
-	padding: 15px;
-	font-size: 16px;
-	letter-spacing: 1px;
-	font-family: 'Antic Slab', cursive;
-	position: relative;
-	transition: all 2s ease;
-	text-decoration: none!important;
-	}
-
-	nav a span {
-	position: absolute;
-	background-color: #ffffff;
-	color: #2c4251;
-	padding: 0;
-	left: 100%;
-	bottom: 10px;
-	display: none;
-	}
-
-	nav a:hover{
-		color: #ffffff;
-	}
-
-	nav a:hover span{
-		display: block;
-		padding: 0 15px!important;
-	}
-
-	#about{
-		#opening-bg{
-			display: block;
-			content: '';
-			position:absolute;
-			background-image: url('../images/mandala.jpg');
-			background-repeat: no-repeat;
-			background-size: cover;
-			top: 0;
-			right: 0%;
-			height:100%;
-			overflow: hidden;
-		}
-	}
-}
-
-@media only screen and (min-width: 1200px){
-	#about,#toolbox, #experience, #projects{padding: $basePadding + 100; margin-left:50px}
-	#about{height: 100vh;}
-	#projects img{height: 22rem;}
-}

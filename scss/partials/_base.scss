@@ -1,0 +1,33 @@
+$basePadding : 50px;
+$baseMargin : 30px 0;
+$backgroundColor: #2c4251;
+$lighttextColor: #ffffff;
+$darktextColor: #2c4251;
+$AnticFont : 'Antic Slab', serif;
+$DancingFont : 'Dancing Script', cursive;
+$letterSpacing : 1px;
+$font-sizes: ('h1' : 55px, 'h2' : 45px, 'h3' : 24px, 'h4' : 22px, 'h5' : 18px, 'h6' : 16px, );
+
+html{ scroll-behavior: smooth; }
+body, ul, li{ margin: 0; padding: 0; letter-spacing: $letterSpacing; line-height: 1.5}
+a{ text-decoration: none; }
+h2,h3,h4,h5,h6, ul > li, p { font-family: $AnticFont; }
+h1 { font-family: $DancingFont; font-size: map-get($font-sizes, h1) }
+h2 { font-size: map-get($font-sizes, h2)  }
+h3 { font-size: map-get($font-sizes, h3)  }
+h4 { font-size: map-get($font-sizes, h4)  }
+h5 { font-size: map-get($font-sizes, h5)  }
+h6 { font-size: map-get($font-sizes, h6)  }
+#about, #toolbox, #projects, #experience{
+	padding: ($basePadding + 50) 20px;
+}
+#toolbox, #experience {
+	background-color: $backgroundColor;
+	color: $lighttextColor;
+	position: relative;
+	h2{
+	color: $lighttextColor;
+	text-align: center;
+	}
+}
+/* End of Common Styles */

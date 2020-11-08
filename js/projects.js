@@ -37,6 +37,23 @@ let projects = [
 
 ];
 
+let mainProjectCard = () => {
+
+	for(let i = 0; i< projects.length; i++){
+		 let obj = projects[i];
+		 createProjectRow(i);
+		 let proDiv = document.getElementById('project#' + i);
+		 createProjectCol1(i, proDiv);
+		 createProjectCol2(proDiv);
+		 createProjectImage(obj,proDiv);
+		 createProjectTitle(obj,proDiv);
+		 createProjectDescription(obj,proDiv);
+		 createWebsiteLink(obj,proDiv);
+		 createGithubLink(obj,proDiv);
+		
+	};
+}
+
 window.onload = mainProjectCard;
 
 function createProjectImage(obj, proDiv){
@@ -98,7 +115,7 @@ function createProjectCol1(i, proDiv) {
 	newColumn1.className = 'col-12 col-lg-8';
 
 	if(i > 0 && (i % 2 !== 0)){
-		newColumn1.classList.add('order-1');
+		newColumn1.classList.add('order-sm-1');
 		newColumn1.classList.add('order-lg-2');
 	}
 	proDiv.appendChild(newColumn1);
@@ -106,7 +123,7 @@ function createProjectCol1(i, proDiv) {
 
 function createProjectCol2(proDiv) {
 	const newColumn2 = document.createElement('div');
-	newColumn2.className = 'col-12 col-lg-4 project-details';
+	newColumn2.className = 'col-12 col-lg-4 order-sm-2 order-lg-1 project-details';
 	proDiv.appendChild(newColumn2);
 }
 
@@ -124,19 +141,3 @@ function createProjectRow(i){
 	document.getElementById('project-container').appendChild(newRow);
 }
 
-function mainProjectCard(){
-
-	for(let i = 0; i< projects.length; i++){
-		 let obj = projects[i];
-		 createProjectRow(i);
-		 let proDiv = document.getElementById('project#' + i);
-		 createProjectCol1(i, proDiv);
-		 createProjectCol2(proDiv);
-		 createProjectImage(obj,proDiv);
-		 createProjectTitle(obj,proDiv);
-		 createProjectDescription(obj,proDiv);
-		 createWebsiteLink(obj,proDiv);
-		 createGithubLink(obj,proDiv);
-		
-	};
-}

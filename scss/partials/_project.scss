@@ -1,0 +1,40 @@
+
+#projects {
+	h2{
+		color: $darktextColor;
+		text-align: center;
+	}
+	h6{
+		text-align: center;
+	}
+	#project-container{
+		margin: $baseMargin 0;
+	}
+	.projectcard{
+    	margin-bottom: 55px;
+	}
+}
+
+.projectcard{
+	img{
+		border: 5px double #2c4251;
+		margin-bottom: 25px;
+		border-radius: 15px 0;
+	}
+	.card-details {
+		padding: 0 20px ;
+	}
+	h3 {
+	text-decoration: underline;
+	font-weight: 600;
+	font-family: $DancingFont;
+	letter-spacing: 2px;
+	}	 
+
+	.btn{
+		background-color: $backgroundColor;
+		border: 1px solid $darktextColor;
+		color: $lighttextColor;
+		margin-right: 15px;
+	}
+}
