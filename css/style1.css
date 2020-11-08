@@ -239,7 +239,8 @@ h6 {
   #mobile-nav .navbar-nav li.nav-item:not(:last-child) {
     padding-right: 10px; }
   #mobile-nav .navbar-nav li.nav-item a {
-    color: #2c4251; }
+    color: #2c4251;
+    font-size: 12px !important; }
     #mobile-nav .navbar-nav li.nav-item a:active {
       font-weight: 700 !important; }
 
