@@ -63,13 +63,15 @@ h6 {
   border-radius: 15px 0; }
 
 .projectcard .card-details {
-  padding: 0 20px; }
+  padding: 0 20px;
+  color: #2c4251 !important; }
 
 .projectcard h3 {
   text-decoration: underline;
   font-weight: 600;
   font-family: "Dancing Script", cursive;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: #2c4251; }
 
 .projectcard .btn {
   background-color: #2c4251;
@@ -172,8 +174,8 @@ h6 {
     top: 30px;
     left: 5px; }
     .logo span {
-      background-color: #ffffff;
-      color: #2c4251; }
+      background-color: #ffffff !important;
+      color: #2c4251 !important; }
   nav a {
     color: #ffffff;
     display: flex;
@@ -240,8 +242,8 @@ h6 {
     padding-right: 10px; }
   #mobile-nav .navbar-nav li.nav-item a {
     color: #2c4251;
-    font-size: 12px !important; }
-    #mobile-nav .navbar-nav li.nav-item a:active {
+    font-size: 12px; }
+    #mobile-nav .navbar-nav li.nav-item a.active {
       font-weight: 700 !important; }
 
 /* Desktop Navigation */
@@ -253,6 +255,7 @@ h6 {
   display: flex;
   align-items: center;
   position: relative;
+  color: #2c4251;
   /* Education section with About section */ }
   #about #education {
     text-align: center;
@@ -279,7 +282,8 @@ h6 {
 #toolbox li {
   color: #2c4251;
   border-bottom: 1px solid #2c4251;
-  padding: 12px; }
+  padding: 12px;
+  list-style: none; }
 
 #toolbox .title {
   font-size: 25px;

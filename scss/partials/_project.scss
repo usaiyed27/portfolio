@@ -23,12 +23,14 @@
 	}
 	.card-details {
 		padding: 0 20px ;
+		color: $darktextColor!important;
 	}
 	h3 {
 	text-decoration: underline;
 	font-weight: 600;
 	font-family: $DancingFont;
 	letter-spacing: 2px;
+	color: $darktextColor;
 	}	 
 
 	.btn{

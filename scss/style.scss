@@ -26,8 +26,8 @@
 		}	
 		li.nav-item a{	
 			color: $darktextColor;
-			font-size: 12px!important;
-			&:active{
+			font-size: 12px;
+			&.active{
 			font-weight: 700!important;
 			}
 		}															
@@ -44,6 +44,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;	
+	color: $darktextColor;
 	/* Education section with About section */
 #education {	
 		text-align: center;
@@ -72,7 +73,7 @@
 /* Toolbox(skills) Section */
 #toolbox {
 	ul{
-		background-color: $lighttextColor;
+		background-color: $lighttextColor;	
 		margin: $baseMargin;
 	}
 
@@ -80,6 +81,7 @@
 		color: $backgroundColor;
 		border-bottom: 1px solid $backgroundColor;
 		padding: 12px;
+		list-style: none;
 	}
 	.title{
 		font-size: 25px;
