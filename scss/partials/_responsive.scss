@@ -4,22 +4,22 @@
 	    content: '';
 	    position: absolute;
 	    bottom: 0;
-	    left: 0;
+	    right: 0;
 	    z-index: 1;
 	    border-left: 145px solid transparent;
 	    border-right: 145px solid transparent;
-	    border-bottom: 50px solid #ffffff;
+	    border-bottom: 50px solid $lighttextColor;
 	}
 
 	#toolbox:after, #experience:after {
     content: '';
     position: absolute;
     top: 0;
-    right: 0px;
+    left: 0px;
     z-index: 1;
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
-    border-top: 50px solid #ffffff;
+    border-top: 50px solid $lighttextColor;
 	}
 
 	#about{
@@ -80,7 +80,7 @@
 		align-content: end;
 		position: fixed;
 		background-color: $backgroundColor;
-		z-index: 20;
+		z-index: 30;
 	}
 
 	.logo {
@@ -128,17 +128,21 @@
 	}
 
 	#about{
-		#opening-bg{
-			display: block!important;
-			content: '';
-			position:absolute;
-			background-image: url('../images/mandala.jpg');
-			background-repeat: no-repeat;
-			background-size: cover;
-			top: 0;
-			right: 0%;
-			height:100%;
-			overflow: hidden;
+		&::after{
+			// background-image: url('https://image.freepik.com/free-vector/startup-life-concept-illustration_114360-1068.jpg');
+			//1F7A8C
+		content: '';
+		position: absolute;
+		background-image: url('../images/leone.jpg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center right;
+		max-width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: -1;
 		}
 	}
 }

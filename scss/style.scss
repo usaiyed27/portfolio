@@ -41,10 +41,10 @@
 
 /* About Section */
 #about{
-	display: flex;
-	align-items: center;
 	position: relative;	
 	color: $darktextColor;
+	background-color: $lighttextColor;
+	z-index: 20;
 	/* Education section with About section */
 #education {	
 		text-align: center;

@@ -7,6 +7,9 @@ body, ul, li {
   letter-spacing: 1px;
   line-height: 1.5; }
 
+body {
+  background-color: #f2f2f2; }
+
 a {
   text-decoration: none; }
 
@@ -36,16 +39,16 @@ h6 {
   padding: 100px 20px; }
 
 #toolbox, #experience {
-  background-color: #2c4251;
-  color: #ffffff;
+  background-color: #376153;
+  color: #f2f2f2;
   position: relative; }
   #toolbox h2, #experience h2 {
-    color: #ffffff;
+    color: #f2f2f2;
     text-align: center; }
 
 /* End of Common Styles */
 #projects h2 {
-  color: #2c4251;
+  color: #376153;
   text-align: center; }
 
 #projects h6 {
@@ -58,25 +61,25 @@ h6 {
   margin-bottom: 55px; }
 
 .projectcard img {
-  border: 5px double #2c4251;
+  border: 5px double #376153;
   margin-bottom: 25px;
   border-radius: 15px 0; }
 
 .projectcard .card-details {
   padding: 0 20px;
-  color: #2c4251 !important; }
+  color: #376153 !important; }
 
 .projectcard h3 {
   text-decoration: underline;
   font-weight: 600;
   font-family: "Dancing Script", cursive;
   letter-spacing: 2px;
-  color: #2c4251; }
+  color: #376153; }
 
 .projectcard .btn {
-  background-color: #2c4251;
-  border: 1px solid #2c4251;
-  color: #ffffff;
+  background-color: #376153;
+  border: 1px solid #376153;
+  color: #f2f2f2;
   margin-right: 15px; }
 
 #experience1, #experience2 {
@@ -85,7 +88,7 @@ h6 {
     padding-left: 20px;
     list-style: circle; }
     #experience1 ul li, #experience2 ul li {
-      color: #ffffff; }
+      color: #f2f2f2; }
 
 #experience .second-col {
   padding-top: 25px; }
@@ -98,7 +101,7 @@ h6 {
   padding-left: 20px;
   list-style: circle; }
   #experience ul li {
-    color: #ffffff; }
+    color: #f2f2f2; }
 
 #experience1 h4, #experience2 h4 {
   text-decoration: underline; }
@@ -110,20 +113,20 @@ h6 {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
     border-left: 145px solid transparent;
     border-right: 145px solid transparent;
-    border-bottom: 50px solid #ffffff; }
+    border-bottom: 50px solid #f2f2f2; }
   #toolbox:after, #experience:after {
     content: '';
     position: absolute;
     top: 0;
-    right: 0px;
+    left: 0px;
     z-index: 1;
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
-    border-top: 50px solid #ffffff; }
+    border-top: 50px solid #f2f2f2; }
   #about #education {
     text-align: left !important; }
     #about #education #edu1, #about #education #edu2 {
@@ -167,15 +170,15 @@ h6 {
     display: grid !important;
     align-content: end;
     position: fixed;
-    background-color: #2c4251;
-    z-index: 20; }
+    background-color: #376153;
+    z-index: 30; }
   .logo {
     position: absolute;
     top: 30px;
     left: 5px; }
     .logo span {
-      background-color: #ffffff !important;
-      color: #2c4251 !important; }
+      background-color: #f2f2f2 !important;
+      color: #376153 !important; }
   nav a {
     color: #ffffff;
     display: flex;
@@ -201,17 +204,19 @@ h6 {
   nav a:hover span {
     display: block;
     padding: 0 15px !important; }
-  #about #opening-bg {
-    display: block !important;
+  #about::after {
     content: '';
     position: absolute;
-    background-image: url("../images/mandala.jpg");
+    background-image: url("../images/leone.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    right: 0%;
+    background-size: contain;
+    background-position: center right;
+    max-width: 100%;
     height: 100%;
-    overflow: hidden; } }
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; } }
 
 @media only screen and (min-width: 1200px) {
   #about, #toolbox, #experience, #projects {
@@ -225,8 +230,8 @@ h6 {
 /* Website Logo */
 .logo span {
   font-family: "Dancing Script", cursive;
-  background-color: #2c4251;
-  color: #ffffff;
+  background-color: #376153;
+  color: #f2f2f2;
   border-radius: 50%;
   padding: 10px; }
 
@@ -241,7 +246,7 @@ h6 {
   #mobile-nav .navbar-nav li.nav-item:not(:last-child) {
     padding-right: 10px; }
   #mobile-nav .navbar-nav li.nav-item a {
-    color: #2c4251;
+    color: #376153;
     font-size: 12px; }
     #mobile-nav .navbar-nav li.nav-item a.active {
       font-weight: 700 !important; }
@@ -252,10 +257,10 @@ h6 {
 
 /* About Section */
 #about {
-  display: flex;
-  align-items: center;
   position: relative;
-  color: #2c4251;
+  color: #376153;
+  background-color: #f2f2f2;
+  z-index: 20;
   /* Education section with About section */ }
   #about #education {
     text-align: center;
@@ -264,8 +269,8 @@ h6 {
       padding: 15px 0; }
     #about #education .fas {
       font-size: 20px;
-      background: #2c4251;
-      color: #ffffff;
+      background: #376153;
+      color: #f2f2f2;
       border-radius: 50%;
       text-align: center;
       padding: 10px;
@@ -276,12 +281,12 @@ h6 {
 
 /* Toolbox(skills) Section */
 #toolbox ul {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   margin: 30px 0; }
 
 #toolbox li {
-  color: #2c4251;
-  border-bottom: 1px solid #2c4251;
+  color: #376153;
+  border-bottom: 1px solid #376153;
   padding: 12px;
   list-style: none; }
 
@@ -293,14 +298,14 @@ h6 {
 
 footer {
   font-family: "Antic Slab", serif;
-  color: #2c4251;
+  color: #376153;
   padding: 50px 0;
   text-align: center; }
   footer .author span {
     font-family: "Dancing Script", cursive;
     font-size: 18px; }
   footer a {
-    color: #2c4251;
+    color: #376153;
     margin: 30px 0; }
   footer i {
     color: #b20000; }
