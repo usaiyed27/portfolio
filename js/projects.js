@@ -13,8 +13,8 @@ let projects = [
 		'title' : 'Face Recognition App',
 		'description' : `Developed web application that detects face from an image. The application using Clarifai API 
 		 to detect face from submitted image url. The web app is built using React, Node, Express, MongoDB.`,
-		'website' : 'https://www.quinonesdesignbuild.com', 
-		'github' : ''
+		'website' : '', 
+		'github' : 'https://github.com/usaiyed27/face-recognition-app'
 		},
 		{
 		'image' : 'images/quinones.png',	

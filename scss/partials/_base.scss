@@ -13,7 +13,12 @@ $font-sizes: ('h1' : 55px, 'h2' : 45px, 'h3' : 24px, 'h4' : 22px, 'h5' : 18px, '
 html{ scroll-behavior: smooth; }
 body, ul, li{ margin: 0; padding: 0; letter-spacing: $letterSpacing; line-height: 1.5}
 body{ background-color: $lighttextColor; }
-a{ text-decoration: none; }
+a{ text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+ }
+
 h2,h3,h4,h5,h6, ul > li, p { font-family: $AnticFont; }
 h1 { font-family: $DancingFont; font-size: map-get($font-sizes, h1) }
 h2 { font-size: map-get($font-sizes, h2)  }

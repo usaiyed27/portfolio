@@ -12,6 +12,8 @@ body {
 
 a {
   text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
 
 h2, h3, h4, h5, h6, ul > li, p {
   font-family: "Antic Slab", serif; }
@@ -266,7 +268,7 @@ h6 {
     text-align: center;
     padding: 15px; }
     #about #education #edu1, #about #education #edu2 {
-      padding: 15px 0; }
+      padding: 10px 0; }
     #about #education .fas {
       font-size: 20px;
       background: #376153;
