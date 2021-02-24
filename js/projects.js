@@ -1,11 +1,11 @@
-let projects = [
+let projectsArray = [
 		{
 		'image' : 'images/portfolio.png',
 		'title' : 'Portfolio Website',
 		'description' : `Developed custom portfolio website that showcase my 
 		 education, skills, projects,experience. The website is developed with HTML5, CSS3, JavaScript, SASS, Bootstrap 
 		 and Animate on Scroll library.`,
-		'website' : 'https://urusasaiyed.netlify.app', 
+		'website' : '', 
 		'github' : 'https://github.com/usaiyed27/portfolio',
 		},
 		{
@@ -39,11 +39,11 @@ let projects = [
 
 let mainProjectCard = () => {
 
-	for(let i = 0; i< projects.length; i++){
-		 let obj = projects[i];
-		 createProjectRow(i);
-		 let proDiv = document.getElementById('project#' + i);
-		 createProjectCol1(i, proDiv);
+	for(let project in projectsArray){
+		 let obj = projectsArray[project];
+		 createProjectRow(project);
+		 let proDiv = document.getElementById('project#' + project);
+		 createProjectCol1(project, proDiv);
 		 createProjectCol2(proDiv);
 		 createProjectImage(obj,proDiv);
 		 createProjectTitle(obj,proDiv);
@@ -56,14 +56,14 @@ let mainProjectCard = () => {
 
 window.onload = mainProjectCard;
 
-function createProjectImage(obj, proDiv){
+const createProjectImage = (obj, proDiv) => {
 	const projectImage = document.createElement('img');
 	projectImage.className = 'card-img';
 	projectImage.setAttribute('src', obj.image);
 	proDiv.getElementsByClassName('col-12 col-lg-8')[0].appendChild(projectImage);
 }
 
-function createWebsiteLink(obj,proDiv){
+const createWebsiteLink = (obj,proDiv) => {
 	if(obj.website != ''){
 		const webLink = document.createElement('a');
 			webLink.className = 'btn link';
@@ -78,7 +78,7 @@ function createWebsiteLink(obj,proDiv){
 	}
 }
 
-function createGithubLink(obj,proDiv){
+const createGithubLink = (obj,proDiv) => {
 
 	if( obj.github != '' ){
 		const gitLink = document.createElement('a');
@@ -94,7 +94,7 @@ function createGithubLink(obj,proDiv){
 	}
 }
 
-function createProjectDescription(obj,proDiv){
+const createProjectDescription = (obj,proDiv) => {
 	const projectDescription = document.createElement('p');
 	let descriptionText = document.createTextNode(obj.description);
 	projectDescription.appendChild(descriptionText);
