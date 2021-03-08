@@ -5,7 +5,7 @@ let projectsArray = [
 		'description' : `Developed custom portfolio website that showcase my 
 		 education, skills, projects,experience. The website is developed with HTML5, CSS3, JavaScript, SASS, Bootstrap 
 		 and Animate on Scroll library.`,
-		'website' : 'https://usaiyed27.github.io/face-recognition-app/', 
+		'website' : '', 
 		'github' : 'https://github.com/usaiyed27/portfolio',
 		},
 		{
@@ -13,7 +13,7 @@ let projectsArray = [
 		'title' : 'Face Recognition App',
 		'description' : `Developed web application that detects face from an image. The application using Clarifai API 
 		 to detect face from submitted image url. The web app is built using React, Node, Express, PostgresSQL.`,
-		'website' : '', 
+		'website' : 'https://usaiyed27.github.io/face-recognition-app/', 
 		'github' : 'https://github.com/usaiyed27/face-recognition-app'
 		},
 		{
