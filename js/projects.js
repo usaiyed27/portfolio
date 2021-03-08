@@ -5,7 +5,7 @@ let projectsArray = [
 		'description' : `Developed custom portfolio website that showcase my 
 		 education, skills, projects,experience. The website is developed with HTML5, CSS3, JavaScript, SASS, Bootstrap 
 		 and Animate on Scroll library.`,
-		'website' : '', 
+		'website' : 'https://usaiyed27.github.io/face-recognition-app/', 
 		'github' : 'https://github.com/usaiyed27/portfolio',
 		},
 		{
