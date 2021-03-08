@@ -1,5 +1,5 @@
 @media only screen and (min-width: 768px) {
-	#about, #toolbox, #projects, #experience{ padding: ($basePadding + 50) 50px; }
+	// #about, #toolbox, #projects, #experience{ padding: ($basePadding + 50) 50px; }
 	#toolbox::before, #experience:before {
 	    content: '';
 	    position: absolute;
@@ -68,64 +68,64 @@
 }
 
 @media only screen and (min-width: 992px){
-	#about,#toolbox, #experience, #projects{padding: 100px 80px; margin-left:50px}
+	// #about,#toolbox, #experience, #projects{padding: 100px 80px; margin-left:50px}
 	
-	#mobile-nav { display: none!important; }
-	#desktop-nav { display: block!important; }
-	#desktop-nav{
-		border-right: 5px double #ffffff;
-		width: 60px;
-		height: 100vh;
-		display: grid!important;
-		align-content: end;
-		position: fixed;
-		background-color: $backgroundColor;
-		z-index: 30;
-	}
+	// #mobile-nav { display: none!important; }
+	// #desktop-nav { display: block!important; }
+	// #desktop-nav{
+	// 	border-right: 5px double #ffffff;
+	// 	width: 60px;
+	// 	height: 100vh;
+	// 	display: grid!important;
+	// 	align-content: end;
+	// 	position: fixed;
+	// 	background-color: $backgroundColor;
+	// 	z-index: 30;
+	// }
 
-	.logo {
-	position: absolute;
-	top: 30px;
-	left: 5px;
-		span{
-			background-color: $lighttextColor!important;
-			color: $darktextColor!important;
-		}
-	}	
+	// .logo {
+	// position: absolute;
+	// top: 30px;
+	// left: 5px;
+	// 	span{
+	// 		background-color: $lighttextColor!important;
+	// 		color: $darktextColor!important;
+	// 	}
+	// }	
 
 
-	nav a {
-	color:#ffffff;
-	display: flex;
-	justify-content: center;
-	bottom: 0;
-	padding: 15px;
-	font-size: 16px;
-	letter-spacing: 1px;
-	font-family: 'Antic Slab', cursive;
-	position: relative;
-	transition: all 2s ease;
-	text-decoration: none!important;
-	}
+	// nav a {
+	// color:#ffffff;
+	// display: flex;
+	// justify-content: center;
+	// bottom: 0;
+	// padding: 15px;
+	// font-size: 16px;
+	// letter-spacing: 1px;
+	// font-family: 'Antic Slab', cursive;
+	// position: relative;
+	// transition: all 2s ease;
+	// text-decoration: none!important;
+	// }
 
-	nav a span {
-	position: absolute;
-	background-color: #ffffff;
-	color: #2c4251;
-	padding: 0;
-	left: 100%;
-	bottom: 10px;
-	display: none;
-	}
+	// nav a span {
+	// position: absolute;
+	// background-color: #ffffff;
+	// color: #2c4251;
+	// padding: 0;
+	// left: 100%;
+	// bottom: 10px;
+	// display: none;
+	// }
 
-	nav a:hover{
-		color: #ffffff;
-	}
+	// nav a:hover{
+	// 	color: #ffffff;
+	// }
 
-	nav a:hover span{
-		display: block;
-		padding: 0 15px!important;
-	}
+	// nav a:hover span{
+	// 	display: block;
+	// 	padding: 0 15px!important;
+	// }
 
 	#about{
 		&::after{
@@ -148,7 +148,7 @@
 }
 
 @media only screen and (min-width: 1200px){
-	#about,#toolbox, #experience, #projects{padding: $basePadding + 100; margin-left:50px}
+	#about,#toolbox, #experience, #projects{padding: $basePadding + 100; }
 	#about{height: 100vh;}
 	#projects img{height: 22rem;}
 }
