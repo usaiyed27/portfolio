@@ -26,15 +26,15 @@
 		justify-content: flex-end;
 	}
 	.navbar-nav{
-		//flex-direction: row;
+		flex-direction: row;
 		li.nav-item:not(:last-child){
 			padding-right: 10px;	
 		}	
 		li.nav-item a{	
 			color: $darktextColor;
-			font-size: 16px;
+			font-size: 12px;
 			position: relative;
-			padding: 10px;
+			//padding: 0px!important//;
 		}
 		li.nav-item a::after{
 			content: ""; 
@@ -64,6 +64,7 @@
 	color: $darktextColor;
 	background-color: $lighttextColor;
 	z-index: 20;
+	margin-top: 50px;
 	/* Education section with About section */
 #education {	
 		text-align: center;

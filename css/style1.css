@@ -20,7 +20,7 @@ h2, h3, h4, h5, h6, ul > li, p {
 
 h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 55px; }
+  font-size: 65px; }
 
 h2 {
   font-size: 45px; }
@@ -198,32 +198,30 @@ h6 {
   display: flex;
   justify-content: flex-end; }
 
-#mobile-nav .navbar-nav li.nav-item:not(:last-child) {
-  padding-right: 10px; }
-
-#mobile-nav .navbar-nav li.nav-item a {
-  color: #376153;
-  font-size: 16px;
-  position: relative;
-  padding: 10px; }
-
-#mobile-nav .navbar-nav li.nav-item a::after {
-  content: "";
-  position: absolute;
-  border-top: 1px solid  black;
-  border-bottom: 1px solid  black;
-  top: 5px;
-  right: 0;
-  bottom: 5px;
-  left: 0;
-  transform: scaleX(0);
-  transition: 0.4s all ease; }
-
-#mobile-nav .navbar-nav li.nav-item a:hover::after {
-  transform: scaleX(1); }
-
-#mobile-nav .navbar-nav li.nav-item a:active::after {
-  transform: scaleX(1); }
+#mobile-nav .navbar-nav {
+  flex-direction: row; }
+  #mobile-nav .navbar-nav li.nav-item:not(:last-child) {
+    padding-right: 10px; }
+  #mobile-nav .navbar-nav li.nav-item a {
+    color: #376153;
+    font-size: 12px;
+    position: relative;
+    padding: 10px; }
+  #mobile-nav .navbar-nav li.nav-item a::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid  black;
+    border-bottom: 1px solid  black;
+    top: 5px;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.4s all ease; }
+  #mobile-nav .navbar-nav li.nav-item a:hover::after {
+    transform: scaleX(1); }
+  #mobile-nav .navbar-nav li.nav-item a:active::after {
+    transform: scaleX(1); }
 
 /* Desktop Navigation */
 #desktop-nav {
@@ -235,6 +233,7 @@ h6 {
   color: #376153;
   background-color: #f2f2f2;
   z-index: 20;
+  margin-top: 50px;
   /* Education section with About section */ }
   #about #education {
     text-align: center;
