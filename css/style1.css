@@ -109,6 +109,9 @@ h6 {
   text-decoration: underline; }
 
 @media only screen and (min-width: 768px) {
+  .navbar-nav li.nav-item a {
+    font-size: 16px;
+    padding: 0px !important; }
   #toolbox::before, #experience:before {
     content: '';
     position: absolute;
@@ -205,8 +208,7 @@ h6 {
   #mobile-nav .navbar-nav li.nav-item a {
     color: #376153;
     font-size: 12px;
-    position: relative;
-    padding: 10px; }
+    position: relative; }
   #mobile-nav .navbar-nav li.nav-item a::after {
     content: "";
     position: absolute;
