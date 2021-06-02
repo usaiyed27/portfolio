@@ -112,6 +112,21 @@ h6 {
   .navbar-nav li.nav-item a {
     font-size: 16px;
     padding: 0px !important; }
+  .navbar-nav li.nav-item a::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid  black;
+    border-bottom: 1px solid  black;
+    top: 5px;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.4s all ease; }
+  .navbar-nav li.nav-item a:hover::after {
+    transform: scaleX(1); }
+  .navbar-nav li.nav-item a:active::after {
+    transform: scaleX(1); }
   #toolbox::before, #experience:before {
     content: '';
     position: absolute;
@@ -220,10 +235,6 @@ h6 {
     left: 0;
     transform: scaleX(0);
     transition: 0.4s all ease; }
-  #mobile-nav .navbar-nav li.nav-item a:hover::after {
-    transform: scaleX(1); }
-  #mobile-nav .navbar-nav li.nav-item a:active::after {
-    transform: scaleX(1); }
 
 /* Desktop Navigation */
 #desktop-nav {
