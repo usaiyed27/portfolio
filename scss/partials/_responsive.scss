@@ -2,14 +2,14 @@
 	.navbar-nav{	
 		li.nav-item a{	
 			font-size: 16px;
-			padding: 0px!important;
+			padding: 10px!important;
 		}
 
 		li.nav-item a::after{
 			content: ""; 
 			position: absolute;
-			border-top: 1px solid  black; 
-			border-bottom: 1px solid  black; 
+			border-top: 1px solid  $darktextColor; 
+			border-bottom: 1px solid  $darktextColor; 
 			top: 5px; 
 			right: 0; 
 			bottom: 5px; 

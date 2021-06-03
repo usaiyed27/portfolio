@@ -111,12 +111,12 @@ h6 {
 @media only screen and (min-width: 768px) {
   .navbar-nav li.nav-item a {
     font-size: 16px;
-    padding: 0px !important; }
+    padding: 10px !important; }
   .navbar-nav li.nav-item a::after {
     content: "";
     position: absolute;
-    border-top: 1px solid  black;
-    border-bottom: 1px solid  black;
+    border-top: 1px solid #376153;
+    border-bottom: 1px solid #376153;
     top: 5px;
     right: 0;
     bottom: 5px;
@@ -224,17 +224,6 @@ h6 {
     color: #376153;
     font-size: 12px;
     position: relative; }
-  #mobile-nav .navbar-nav li.nav-item a::after {
-    content: "";
-    position: absolute;
-    border-top: 1px solid  black;
-    border-bottom: 1px solid  black;
-    top: 5px;
-    right: 0;
-    bottom: 5px;
-    left: 0;
-    transform: scaleX(0);
-    transition: 0.4s all ease; }
 
 /* Desktop Navigation */
 #desktop-nav {

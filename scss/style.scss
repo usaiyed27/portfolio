@@ -34,20 +34,19 @@
 			color: $darktextColor;
 			font-size: 12px;
 			position: relative;
-			//padding: 0px!important//;
 		}
-		li.nav-item a::after{
-			content: ""; 
-			position: absolute;
-			border-top: 1px solid  black; 
-			border-bottom: 1px solid  black; 
-			top: 5px; 
-			right: 0; 
-			bottom: 5px; 
-			left: 0; 
-			transform: scaleX(0);
-			transition: 0.4s all ease;
-		}
+		// li.nav-item a::after{
+		// 	content: ""; 
+		// 	position: absolute;
+		// 	border-top: 1px solid  black; 
+		// 	border-bottom: 1px solid  black; 
+		// 	top: 5px; 
+		// 	right: 0; 
+		// 	bottom: 5px; 
+		// 	left: 0; 
+		// 	transform: scaleX(0);
+		// 	transition: 0.4s all ease;
+		// }
 		// li.nav-item a:hover::after{transform: scaleX(1);}
 		// li.nav-item a:active::after{transform: scaleX(1);}	
 	}																
