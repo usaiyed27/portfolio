@@ -1,6 +1,6 @@
 let projectsArray = [
 		{
-		'image' : 'images/random-quote.png',	
+		'image' : 'images/random-quote.jpg',	
 		'title' : 'Random Quote Generator',
 		'description' : `Random quote generator is built in React. The app uses third party
 		API to fetch the quote each time the generate button is clicked.`,
