@@ -90,5 +90,5 @@ const createProjectImage = (obj, i) => {
 	const projectImage = document.createElement('img');
 	projectImage.className = 'card-img';
 	projectImage.setAttribute('src', obj.image);
-		// document.getElementById('column' + i).appendChild(projectImage);
+    document.getElementById('column' + i).appendChild(projectImage);
 }
