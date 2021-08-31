@@ -1,6 +1,6 @@
 let projectsArray = [
 		{
-		'image' : 'images/random-quote.png',	
+		'image' : 'random-quote.jpg',	
 		'title' : 'Random Quote Generator',
 		'description' : `Random quote generator is built in React. The app uses third party
 		API to fetch the quote each time the generate button is clicked.`,
@@ -8,7 +8,7 @@ let projectsArray = [
 		'github' : ''
 		},
 		{
-		'image' : '/images/portfolio.png',
+		'image' : 'images/portfolio.png',
 		'title' : 'Portfolio Website',
 		'description' : `Developed custom portfolio website that showcase my 
 		 education, skills, projects,experience. The website is developed with HTML5, CSS3, JavaScript, SASS, Bootstrap 
@@ -47,30 +47,29 @@ let projectsArray = [
 let mainProject = () => {
 	createRow();
 	for(let project in projectsArray){
-		createProjectCol(project);
-		createProjectImage(project);
+		
+		//createProjectImage(project);
 	}
 }
 
 window.onload = mainProject;
 
 
-function createRow(i){
-	
+function createRow(){
+	let count = 1, total = 2;
 	for(let project in projectsArray){
-		let rowID = 'row' + project;
-		if(project > 0 && (project % 2 !== 0)){
+
+		if(total == count){
 			console.log(projectsArray[project], project)
 			const newRow = document.createElement('div');
 			newRow.className = 'row projectcard';
-
-			$(newRow).attr({
-				 id : rowID,
-		
-			});
+			newRow.setAttribute('id', 'row' + (count - 1))
+			createProjectCol(project);
 
 			document.getElementById('project-container').appendChild(newRow);
+			
 		}
+		count++;
 	}
 }
 
@@ -86,9 +85,9 @@ function createProjectCol(i) {
 	document.getElementsByClassName('projectcard')[0].appendChild(newColumn);
 }
 
-const createProjectImage = (obj, i) => {
-	const projectImage = document.createElement('img');
-	projectImage.className = 'card-img';
-	projectImage.setAttribute('src', obj.image);
-    document.getElementById('column' + i).appendChild(projectImage);
-}
+// const createProjectImage = (obj, i) => {
+// 	const projectImage = document.createElement('img');
+// 	projectImage.className = 'card-img';
+// 	//projectImage.setAttribute('src', obj.image);
+//     document.getElementById('column' + i).appendChild(projectImage);
+// }
