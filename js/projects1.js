@@ -1,6 +1,6 @@
-let projectsArray = [
+let projectsArrays = [
 		{
-		'image' : 'random-quote.jpg',	
+		'image' : 'images/leone.jpg',	
 		'title' : 'Random Quote Generator',
 		'description' : `Random quote generator is built in React. The app uses third party
 		API to fetch the quote each time the generate button is clicked.`,
@@ -46,31 +46,22 @@ let projectsArray = [
 
 let mainProject = () => {
 	createRow();
-	for(let project in projectsArray){
-		
-		//createProjectImage(project);
+	for(let project in projectsArrays){
+		createProjectCol(project);
+		createProjectImage(project);
 	}
 }
+
 
 window.onload = mainProject;
 
 
 function createRow(){
-	let count = 1, total = 2;
-	for(let project in projectsArray){
-
-		if(total == count){
-			console.log(projectsArray[project], project)
-			const newRow = document.createElement('div');
-			newRow.className = 'row projectcard';
-			newRow.setAttribute('id', 'row' + (count - 1))
-			createProjectCol(project);
-
-			document.getElementById('project-container').appendChild(newRow);
-			
-		}
-		count++;
-	}
+	//.log(projectsArray[project], project)
+	const newRow = document.createElement('div');
+	newRow.className = 'row projectcard';
+	newRow.setAttribute('id', 'row')
+	document.getElementById('project-container').appendChild(newRow);
 }
 
 function createProjectCol(i) {
@@ -81,13 +72,24 @@ function createProjectCol(i) {
 	$(newColumn).attr({
 		id : colID,
 	});
-
-	document.getElementsByClassName('projectcard')[0].appendChild(newColumn);
+    
+	document.getElementById('row').appendChild(newColumn);
 }
 
-// const createProjectImage = (obj, i) => {
-// 	const projectImage = document.createElement('img');
-// 	projectImage.className = 'card-img';
-// 	//projectImage.setAttribute('src', obj.image);
-//     document.getElementById('column' + i).appendChild(projectImage);
-// }
+const createProjectImage = (obj) => {
+	const projectImage = document.createElement('img');
+	projectImage.className = 'card-img';
+
+	try{
+	   if(obj.image){
+	   	projectImage.setAttribute('src', obj.image);	
+	   }	
+	}
+
+	catch(err){
+		console.log(err);
+	}
+	
+	console.log(obj.image)
+    document.getElementById('column' + obj).appendChild(projectImage);
+}
